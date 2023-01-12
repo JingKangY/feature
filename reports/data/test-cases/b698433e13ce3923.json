@@ -1,0 +1,243 @@
+{
+  "uid" : "b698433e13ce3923",
+  "name" : "signup_03测试密码为空",
+  "fullName" : "testcase.test_signup.TestSignup#test_signup",
+  "historyId" : "f0c1e62bb8085ce0bf3648bbdf32228c",
+  "time" : {
+    "start" : 1661419476225,
+    "stop" : 1661419476743,
+    "duration" : 518
+  },
+  "description" : "测试密码为空",
+  "descriptionHtml" : "<p>测试密码为空</p>/n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1661419463512,
+      "stop" : 1661419463512,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1661419463513,
+      "stop" : 1661419463513,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "connect_database",
+    "time" : {
+      "start" : 1661419475134,
+      "stop" : 1661419475137,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "test_signup_clear",
+    "time" : {
+      "start" : 1661419475137,
+      "stop" : 1661419475170,
+      "duration" : 33
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "测试密码为空",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "1、正确输入接口地址                    2、正确输入请求参数                    3、查看响应body是否正确                    4、检验数据库结果",
+      "time" : {
+        "start" : 1661419476225,
+        "stop" : 1661419476743,
+        "duration" : 518
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "step：响应断言",
+        "time" : {
+          "start" : 1661419476734,
+          "stop" : 1661419476737,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "expect",
+          "value" : "{'Status': 1002, 'Result': 'Password is null', 'Message': '注册失败，密码不能为空'}"
+        }, {
+          "name" : "res_actual",
+          "value" : "{'Status': 1002, 'Result': 'Password is null', 'Message': '注册失败，密码不能为空'}"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "step：数据库断言",
+        "time" : {
+          "start" : 1661419476740,
+          "stop" : 1661419476742,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "db_expect",
+          "value" : "(0, 0)"
+        }, {
+          "name" : "db_actual",
+          "value" : "(0, 0)"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "case_info",
+        "value" : "['signup_03', '测试密码为空', '/apitest/signup/', 'post', 'json', /"{'username':'test07','password':'','confirm':'123456','name':'注册密码为空用户'}/", /"{'Status':1002,'Result':'Password is null','Message':'注册失败，密码不能为空'}/", 'users, info', /"select count(*),(select count(*) from info where name='注册密码为空用户') from users where username='test07' and password=md5('')/", '(0,0)']"
+      }, {
+        "name" : "connect_database",
+        "value" : "<commons.mysql.ConnectMysql object at 0x000002C87D873EB0>"
+      }, {
+        "name" : "test_signup_clear",
+        "value" : "None"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "67f24ac7b87bfa48",
+      "name" : "log",
+      "source" : "67f24ac7b87bfa48.txt",
+      "type" : "text/plain",
+      "size" : 977
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "connect_database::0",
+    "time" : {
+      "start" : 1661419480972,
+      "stop" : 1661419480972,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "注册模块"
+  }, {
+    "name" : "epic",
+    "value" : "双创项目"
+  }, {
+    "name" : "feature",
+    "value" : "接口测试项目"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_signup"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSignup"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2022XUI"
+  }, {
+    "name" : "thread",
+    "value" : "7608-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_signup"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_info",
+    "value" : "['signup_03', '测试密码为空', '/apitest/signup/', 'post', 'json', /"{'username':'test07','password':'','confirm':'123456','name':'注册密码为空用户'}/", /"{'Status':1002,'Result':'Password is null','Message':'注册失败，密码不能为空'}/", 'users, info', /"select count(*),(select count(*) from info where name='注册密码为空用户') from users where username='test07' and password=md5('')/", '(0,0)']"
+  } ],
+  "links" : [ {
+    "name" : "缺陷标题连接测试www.baidu.com",
+    "url" : "缺陷标题连接测试www.baidu.com",
+    "type" : "issue"
+  }, {
+    "name" : "www.baidu.com",
+    "url" : "www.baidu.com",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=2)" ]
+  },
+  "source" : "b698433e13ce3923.json",
+  "parameterValues" : [ "['signup_03', '测试密码为空', '/apitest/signup/', 'post', 'json', /"{'username':'test07','password':'','confirm':'123456','name':'注册密码为空用户'}/", /"{'Status':1002,'Result':'Password is null','Message':'注册失败，密码不能为空'}/", 'users, info', /"select count(*),(select count(*) from info where name='注册密码为空用户') from users where username='test07' and password=md5('')/", '(0,0)']" ]
+}

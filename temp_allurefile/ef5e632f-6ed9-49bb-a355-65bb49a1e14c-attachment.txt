@@ -1,0 +1,12 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:227 Starting new HTTP connection (1): 172.16.9.128:80
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://172.16.9.128:80 "POST /apitest/login/ HTTP/1.1" 200 77
+DEBUG    root:requeststart.py:22 发起请求的参数为：{'url': 'http://172.16.9.128:80/apitest/login/', 'method': 'post', 'data': {'username': '', 'password': ''}}
+DEBUG    root:asserts.py:30 Response_Code实际结果为：1001
+DEBUG    root:asserts.py:31 Response_Code预期结果为：1001
+INFO     root:asserts.py:33 断言Code用例通过！
+DEBUG    root:asserts.py:42 Response_Message实际结果为：Username is null
+DEBUG    root:asserts.py:43 Response_Message预期结果为：Username is null
+INFO     root:asserts.py:45 断言Message用例通过！
+DEBUG    root:asserts.py:42 Response_Message实际结果为：用户名不能为空
+DEBUG    root:asserts.py:43 Response_Message预期结果为：用户名不能为空
+INFO     root:asserts.py:45 断言Message用例通过！

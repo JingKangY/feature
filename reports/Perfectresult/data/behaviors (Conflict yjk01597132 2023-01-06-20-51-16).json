@@ -1,0 +1,29 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "双创项目",
+    "children" : [ {
+      "name" : "登录",
+      "children" : [ {
+        "name" : "登录模块一",
+        "children" : [ {
+          "name" : "测试一下",
+          "uid" : "261133bdf505aa0",
+          "parentUid" : "28bf1d008d807518ea54428cb9bad595",
+          "status" : "failed",
+          "time" : {
+            "start" : 1673009469407,
+            "stop" : 1673009469789,
+            "duration" : 382
+          },
+          "flaky" : false,
+          "parameters" : [ "['测试一下', 'https://p10496-hk-bbs.ejoy.com/api/bbs/S3G二周年两行情书/index?count=100', 'get', '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', '3e4547b4bb12e9047950252d64b63472']" ]
+        } ],
+        "uid" : "28bf1d008d807518ea54428cb9bad595"
+      } ],
+      "uid" : "fca14946a62bedaaeb476c2f086f6c6e"
+    } ],
+    "uid" : "2f5e9659ed27c803276f98a7c3cc2194"
+  } ],
+  "name" : "behaviors"
+}

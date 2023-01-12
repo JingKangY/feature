@@ -1,0 +1,416 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testcase",
+    "children" : [ {
+      "name" : "test_login",
+      "children" : [ {
+        "name" : "TestLogin",
+        "children" : [ {
+          "name" : "login_01测试成功登录",
+          "uid" : "350ef7d53d13327b",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "failed",
+          "time" : {
+            "start" : 1661419468861,
+            "stop" : 1661419469388,
+            "duration" : 527
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 2,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['login_01', '测试成功登录', '/apitest/login/', 'post', 'data', /"{'username':'test01','password':'123456'}/", /"{'Status':1000,'Result':'Usercheck ok','Message':'登录验证成'}/"]" ]
+        }, {
+          "name" : "login_02测试用户名为空",
+          "uid" : "fc602424b49a62fa",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419469416,
+            "stop" : 1661419469926,
+            "duration" : 510
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['login_02', '测试用户名为空', '/apitest/login/', 'post', 'data', /"{'username':'','password':'123456'}/", /"{'Status':1001,'Result':'Username is null','Message':'用户名不能为空'}/"]" ]
+        }, {
+          "name" : "login_03测试密码为空",
+          "uid" : "bcb1cfd59b082301",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419469933,
+            "stop" : 1661419470442,
+            "duration" : 509
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['login_03', '测试密码为空', '/apitest/login/', 'post', 'data', /"{'username':'test02','password':''}/", /"{'Status':1002,'Result':'Password is null','Message':'密码不能为空'}/"]" ]
+        }, {
+          "name" : "login_04测试用户名和密码均为空",
+          "uid" : "7fd600ce751d1cee",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419470448,
+            "stop" : 1661419470956,
+            "duration" : 508
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['login_04', '测试用户名和密码均为空', '/apitest/login/', 'post', 'data', /"{'username':'','password':''}/", /"{'Status':1001,'Result':'Username is null','Message':'用户名不能为空'}/"]" ]
+        }, {
+          "name" : "login_05测试用户名错误",
+          "uid" : "3a4a172e2ecefd96",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419470965,
+            "stop" : 1661419471478,
+            "duration" : 513
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['login_05', '测试用户名错误', '/apitest/login/', 'post', 'data', /"{'username':'test03','password':'123456'}/", /"{'Status':1003,'Result':'Username error','Message':'用户名错误'}/"]" ]
+        }, {
+          "name" : "login_06测试密码错误",
+          "uid" : "af503ee09011d372",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419471485,
+            "stop" : 1661419471997,
+            "duration" : 512
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['login_06', '测试密码错误', '/apitest/login/', 'post', 'data', /"{'username':'test03','password':'123'}/", /"{'Status': 1003, 'Result': 'Username error', 'Message': '用户名错误'}/"]" ]
+        }, {
+          "name" : "login_07测试用户名和密码均错误",
+          "uid" : "7f13989088b7f13c",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419472010,
+            "stop" : 1661419472522,
+            "duration" : 512
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['login_07', '测试用户名和密码均错误', '/apitest/login/', 'post', 'data', /"{'username':'test05','password':'123'}/", /"{'Status':1003,'Result':'Username error','Message':'用户名错误'}/"]" ]
+        }, {
+          "name" : "login_08测试用户名为中文",
+          "uid" : "5932721a6f7b5b5f",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419472533,
+            "stop" : 1661419473045,
+            "duration" : 512
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['login_08', '测试用户名为中文', '/apitest/login/', 'post', 'data', /"{'username':'你好','password':'123456'}/", /"{'Status':1003,'Result':'Username error','Message':'用户名错误'}/"]" ]
+        }, {
+          "name" : "login_09测试用户名为数字",
+          "uid" : "596dd261719251f8",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419473056,
+            "stop" : 1661419473569,
+            "duration" : 513
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['login_09', '测试用户名为数字', '/apitest/login/', 'post', 'data', /"{'username':'123456','password':'123456'}/", /"{'Status':1003,'Result':'Username error','Message':'用户名错误'}/"]" ]
+        }, {
+          "name" : "login_10测试密码为无效最大边界值",
+          "uid" : "cc77b8a385b663e4",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419473578,
+            "stop" : 1661419474088,
+            "duration" : 510
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['login_10', '测试密码为无效最大边界值', '/apitest/login/', 'post', 'data', /"{'username':'test05','password':'12345678945647898468464'}/", /"{'Status':1003,'Result':'Username error','Message':'用户名错误'}/"]" ]
+        }, {
+          "name" : "login_11测试用户名为特殊字符",
+          "uid" : "eaf1d8300b22829c",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419474100,
+            "stop" : 1661419474610,
+            "duration" : 510
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['login_11', '测试用户名为特殊字符', '/apitest/login/', 'post', 'data', /"{'username':'*%$','password':'123456'}/", /"{'Status':1003,'Result':'Username error','Message':'用户名错误'}/"]" ]
+        }, {
+          "name" : "login_12测试密码长度超过限制",
+          "uid" : "b125ddb3ae502d81",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419474616,
+            "stop" : 1661419475125,
+            "duration" : 509
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['login_12', '测试密码长度超过限制', '/apitest/login/', 'post', 'data', /"{'username':'test15','password':'123456784948494848484486486486'}/", /"{'Status':1004,'Result':'Password error','Message':'用户名或密码错误'}/"]" ]
+        } ],
+        "uid" : "a78be7069c22cb24448c5bc447c4aec6"
+      } ],
+      "uid" : "0a485542467e5c5c95949e99a701fc6f"
+    }, {
+      "name" : "test_signup",
+      "children" : [ {
+        "name" : "TestSignup",
+        "children" : [ {
+          "name" : "signup_01测试成功注册",
+          "uid" : "775129b5211c20aa",
+          "parentUid" : "19529ec289732fa8dbd4fd64543acffc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419475171,
+            "stop" : 1661419475685,
+            "duration" : 514
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['signup_01', '测试成功注册', '/apitest/signup/', 'post', 'json', /"{'username':'test06','password':'123456','confirm':'123456','name':'成功注册用户'}/", /"{'Status':1000,'Result':'Success','Message':'注册成功'}/", 'users, info', /"select count(*),(select count(*) from info where name='成功注册用户') from users where username='test06' and password=md5('123456')/", '(1,1)']" ]
+        }, {
+          "name" : "signup_02测试用户名为空",
+          "uid" : "d21e47a52cec57a",
+          "parentUid" : "19529ec289732fa8dbd4fd64543acffc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419475693,
+            "stop" : 1661419476212,
+            "duration" : 519
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['signup_02', '测试用户名为空', '/apitest/signup/', 'post', 'json', /"{'username':'','password':'123456','confirm':'123456','name':'注册用户名为空用户'}/", /"{'Status':1001,'Result':'Username is null','Message':'注册失败，用户名不能为空'}/", 'users, info', /"select count(*),(select count(*) from info where name='注册用户名为空用户') from users where username='' and password=md5('123456')/", '(0,0)']" ]
+        }, {
+          "name" : "signup_03测试密码为空",
+          "uid" : "b698433e13ce3923",
+          "parentUid" : "19529ec289732fa8dbd4fd64543acffc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419476225,
+            "stop" : 1661419476743,
+            "duration" : 518
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['signup_03', '测试密码为空', '/apitest/signup/', 'post', 'json', /"{'username':'test07','password':'','confirm':'123456','name':'注册密码为空用户'}/", /"{'Status':1002,'Result':'Password is null','Message':'注册失败，密码不能为空'}/", 'users, info', /"select count(*),(select count(*) from info where name='注册密码为空用户') from users where username='test07' and password=md5('')/", '(0,0)']" ]
+        }, {
+          "name" : "signup_04测试确认密码为空",
+          "uid" : "401d865a69993aab",
+          "parentUid" : "19529ec289732fa8dbd4fd64543acffc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419476756,
+            "stop" : 1661419477293,
+            "duration" : 537
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['signup_04', '测试确认密码为空', '/apitest/signup/', 'post', 'json', /"{'username':'test08','password':'123456','confirm':'','name':'注册确认密码为空用户'}/", /"{'Status':1003,'Result':'Confirm password is null','Message':'注册失败，确认密码不能为空'}/", 'users, info', /"select count(*),(select count(*) from info where name='注册确认密码为空用户') from users where username='test08' and password=md5('123456')/", '(1,1)']" ]
+        }, {
+          "name" : "signup_05测试姓名为空",
+          "uid" : "b061d28c8025449f",
+          "parentUid" : "19529ec289732fa8dbd4fd64543acffc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419477299,
+            "stop" : 1661419477815,
+            "duration" : 516
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['signup_05', '测试姓名为空', '/apitest/signup/', 'post', 'json', /"{'username':'test09','password':'123456','confirm':'123456','name':''}/", /"{'Status':1004,'Result':'Name is null','Message':'注册失败，姓名不能为空'}/", 'users, info', /"select count(*),(select count(*) from info where name='') from users where username='test09' and password=md5('123456')/", '(0,0)']" ]
+        }, {
+          "name" : "signup_06测试参数全为空",
+          "uid" : "3234d2971e0ce0ad",
+          "parentUid" : "19529ec289732fa8dbd4fd64543acffc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419477827,
+            "stop" : 1661419478340,
+            "duration" : 513
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['signup_06', '测试参数全为空', '/apitest/signup/', 'post', 'json', /"{'username':'','password':'','confirm':'','name':''}/", /"{'Status':1001,'Result':'Username is null','Message':'注册失败，用户名不能为空'}/", 'users, info', /"select count(*),(select count(*) from info where name='') from users where username='' and password=md5('')/", '(0,0)']" ]
+        }, {
+          "name" : "signup_07测试两个密码不一致",
+          "uid" : "3e51b6060394d176",
+          "parentUid" : "19529ec289732fa8dbd4fd64543acffc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419478352,
+            "stop" : 1661419478865,
+            "duration" : 513
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['signup_07', '测试两个密码不一致', '/apitest/signup/', 'post', 'json', /"{'username':'test10','password':'123456','confirm':'123','name':'注册两个密码不一致用户'}/", /"{'Status':1009,'Result':'Confirm password error','Message':'注册失败，两个密码不一致'}/", 'users, info', /"select count(*),(select count(*) from info where name='注册两个密码不一致用户') from users where username='test10' and password=md5('123456')/", '(0,0)']" ]
+        }, {
+          "name" : "signup_08测试用户重复注册",
+          "uid" : "d1b99f914fc828b1",
+          "parentUid" : "19529ec289732fa8dbd4fd64543acffc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419478872,
+            "stop" : 1661419479389,
+            "duration" : 517
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['signup_08', '测试用户重复注册', '/apitest/signup/', 'post', 'json', /"{'username':'test11','password':'123456','confirm':'123456','name':'重复注册用户'}/", /"{'Status':1010,'Result':'Username test11 is taken','Message':'注册失败，用户名已被占用'}/", 'users, info', /"select count(*),(select count(*) from info where name='重复注册用户') from users where username='test11' and password=md5('123456')/", '(1,1)']" ]
+        }, {
+          "name" : "signup_09测试用户名为中文",
+          "uid" : "b7b64ec3227083e4",
+          "parentUid" : "19529ec289732fa8dbd4fd64543acffc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419479401,
+            "stop" : 1661419479921,
+            "duration" : 520
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['signup_09', '测试用户名为中文', '/apitest/signup/', 'post', 'json', '{/"username/":/"阳靖康/",/"password/":/"123456/",/"confirm/":/"123456/",/"name/":/"中文注册用户/"}', '{/"Status/":1000,/"Result/":/"Success/",/"Message/":/"注册成功/"}', 'users, info', /"select count(*),(select count(*) from info where name='中文注册用户') from users where username='阳靖康' and password=md5('123456')/", '(1,1)']" ]
+        }, {
+          "name" : "signup_10测试用户名为特殊字符",
+          "uid" : "a898962b0cd221ae",
+          "parentUid" : "19529ec289732fa8dbd4fd64543acffc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419479934,
+            "stop" : 1661419480449,
+            "duration" : 515
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['signup_10', '测试用户名为特殊字符', '/apitest/signup/', 'post', 'json', '{/"username/":/"%￥#@&*/",/"password/":/"123456/",/"confirm/":/"123456/",/"name/":/"特殊字符用户/"}', '{/"Status/":1000,/"Result/":/"Success/",/"Message/":/"注册成功/"}', 'users, info', /"select count(*),(select count(*) from info where name='特殊字符用户') from users where username='%￥#@&*' and password=md5('123456')/", '(1,1)']" ]
+        }, {
+          "name" : "signup_10测试用户名为特殊字符",
+          "uid" : "b3c30962baaa32b0",
+          "parentUid" : "19529ec289732fa8dbd4fd64543acffc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1661419480456,
+            "stop" : 1661419480969,
+            "duration" : 513
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "['signup_10', '测试用户名为特殊字符', '/apitest/signup/', 'post', 'json', '{/"username/":/"test12/",/"password/":/"阳靖康/",/"confirm/":/"阳靖康/",/"name/":/"注册密码为中文/"}', '{/"Status/":1000,/"Result/":/"Success/",/"Message/":/"注册成功/"}', 'users, info', /"select count(*),(select count(*) from info where name='注册密码为中文') from users where username='阳靖康'/", '(1,1)']" ]
+        } ],
+        "uid" : "19529ec289732fa8dbd4fd64543acffc"
+      } ],
+      "uid" : "be8863d4fd7ac3071b2ccb72e30ae4bc"
+    } ],
+    "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
+  } ]
+}

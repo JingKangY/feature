@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "testcase.erxing_Love_Letter.test_get_bullet_screen_content",
+    "children" : [ {
+      "name" : "测试一下",
+      "uid" : "261133bdf505aa0",
+      "parentUid" : "13fd2d1c916e74712f9b5ba702fed47c",
+      "status" : "failed",
+      "time" : {
+        "start" : 1673009469407,
+        "stop" : 1673009469789,
+        "duration" : 382
+      },
+      "flaky" : false,
+      "parameters" : [ "['测试一下', 'https://p10496-hk-bbs.ejoy.com/api/bbs/S3G二周年两行情书/index?count=100', 'get', '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', '3e4547b4bb12e9047950252d64b63472']" ]
+    } ],
+    "uid" : "testcase.erxing_Love_Letter.test_get_bullet_screen_content"
+  } ],
+  "name" : "packages"
+}

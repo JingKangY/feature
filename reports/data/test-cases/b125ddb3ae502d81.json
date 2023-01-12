@@ -1,0 +1,225 @@
+{
+  "uid" : "b125ddb3ae502d81",
+  "name" : "login_12测试密码长度超过限制",
+  "fullName" : "testcase.test_login.TestLogin#test_login",
+  "historyId" : "5c4c12113ec9e975c825f741f58840d4",
+  "time" : {
+    "start" : 1661419474616,
+    "stop" : 1661419475125,
+    "duration" : 509
+  },
+  "description" : "测试密码长度超过限制",
+  "descriptionHtml" : "<p>测试密码长度超过限制</p>/n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1661419463512,
+      "stop" : 1661419463512,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1661419463513,
+      "stop" : 1661419463513,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "connect_database",
+    "time" : {
+      "start" : 1661419463513,
+      "stop" : 1661419463530,
+      "duration" : 17
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "test_login_clear",
+    "time" : {
+      "start" : 1661419463530,
+      "stop" : 1661419463585,
+      "duration" : 55
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "测试密码长度超过限制",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确",
+      "time" : {
+        "start" : 1661419474616,
+        "stop" : 1661419475125,
+        "duration" : 509
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "step：响应断言",
+        "time" : {
+          "start" : 1661419475124,
+          "stop" : 1661419475125,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "expect",
+          "value" : "{'Status': 1004, 'Result': 'Password error', 'Message': '用户名或密码错误'}"
+        }, {
+          "name" : "res_actual",
+          "value" : "{'Status': 1004, 'Result': 'Password error', 'Message': '用户名或密码错误'}"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "case_info",
+        "value" : "['login_12', '测试密码长度超过限制', '/apitest/login/', 'post', 'data', /"{'username':'test15','password':'123456784948494848484486486486'}/", /"{'Status':1004,'Result':'Password error','Message':'用户名或密码错误'}/"]"
+      }, {
+        "name" : "connect_database",
+        "value" : "<commons.mysql.ConnectMysql object at 0x000002C87D873EB0>"
+      }, {
+        "name" : "test_login_clear",
+        "value" : "None"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "58066fde2be833b2",
+      "name" : "log",
+      "source" : "58066fde2be833b2.txt",
+      "type" : "text/plain",
+      "size" : 862
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "connect_database::0",
+    "time" : {
+      "start" : 1661419475127,
+      "stop" : 1661419475128,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "接口测试项目"
+  }, {
+    "name" : "epic",
+    "value" : "双创项目"
+  }, {
+    "name" : "story",
+    "value" : "登录模块"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2022XUI"
+  }, {
+    "name" : "thread",
+    "value" : "7608-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_info",
+    "value" : "['login_12', '测试密码长度超过限制', '/apitest/login/', 'post', 'data', /"{'username':'test15','password':'123456784948494848484486486486'}/", /"{'Status':1004,'Result':'Password error','Message':'用户名或密码错误'}/"]"
+  } ],
+  "links" : [ {
+    "name" : "缺陷标题测试",
+    "url" : "缺陷标题测试",
+    "type" : "issue"
+  }, {
+    "name" : "www.baidu.com",
+    "url" : "www.baidu.com",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=1)" ]
+  },
+  "source" : "b125ddb3ae502d81.json",
+  "parameterValues" : [ "['login_12', '测试密码长度超过限制', '/apitest/login/', 'post', 'data', /"{'username':'test15','password':'123456784948494848484486486486'}/", /"{'Status':1004,'Result':'Password error','Message':'用户名或密码错误'}/"]" ]
+}

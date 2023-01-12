@@ -1,0 +1,243 @@
+{
+  "uid" : "b3c30962baaa32b0",
+  "name" : "signup_10测试用户名为特殊字符",
+  "fullName" : "testcase.test_signup.TestSignup#test_signup",
+  "historyId" : "44ac241eca5fd2445b52db6cd153a4e4",
+  "time" : {
+    "start" : 1661419480456,
+    "stop" : 1661419480969,
+    "duration" : 513
+  },
+  "description" : "测试用户名为特殊字符",
+  "descriptionHtml" : "<p>测试用户名为特殊字符</p>/n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1661419463512,
+      "stop" : 1661419463512,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1661419463513,
+      "stop" : 1661419463513,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "connect_database",
+    "time" : {
+      "start" : 1661419475134,
+      "stop" : 1661419475137,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "test_signup_clear",
+    "time" : {
+      "start" : 1661419475137,
+      "stop" : 1661419475170,
+      "duration" : 33
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "测试用户名为特殊字符",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "1、正确输入接口地址                    2、正确输入请求参数                    3、查看响应body是否正确                    4、检验数据库结果",
+      "time" : {
+        "start" : 1661419480456,
+        "stop" : 1661419480969,
+        "duration" : 513
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "step：响应断言",
+        "time" : {
+          "start" : 1661419480966,
+          "stop" : 1661419480967,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "expect",
+          "value" : "{'Status': 1000, 'Result': 'Success', 'Message': '注册成功'}"
+        }, {
+          "name" : "res_actual",
+          "value" : "{'Status': 1000, 'Result': 'Success', 'Message': '注册成功'}"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "step：数据库断言",
+        "time" : {
+          "start" : 1661419480968,
+          "stop" : 1661419480969,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "db_expect",
+          "value" : "(1, 1)"
+        }, {
+          "name" : "db_actual",
+          "value" : "(1, 1)"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "case_info",
+        "value" : "['signup_10', '测试用户名为特殊字符', '/apitest/signup/', 'post', 'json', '{/"username/":/"test12/",/"password/":/"阳靖康/",/"confirm/":/"阳靖康/",/"name/":/"注册密码为中文/"}', '{/"Status/":1000,/"Result/":/"Success/",/"Message/":/"注册成功/"}', 'users, info', /"select count(*),(select count(*) from info where name='注册密码为中文') from users where username='阳靖康'/", '(1,1)']"
+      }, {
+        "name" : "connect_database",
+        "value" : "<commons.mysql.ConnectMysql object at 0x000002C87D873EB0>"
+      }, {
+        "name" : "test_signup_clear",
+        "value" : "None"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "57b95f7858817d1e",
+      "name" : "log",
+      "source" : "57b95f7858817d1e.txt",
+      "type" : "text/plain",
+      "size" : 1036
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "connect_database::0",
+    "time" : {
+      "start" : 1661419480972,
+      "stop" : 1661419480972,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "注册模块"
+  }, {
+    "name" : "epic",
+    "value" : "双创项目"
+  }, {
+    "name" : "feature",
+    "value" : "接口测试项目"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_signup"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSignup"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2022XUI"
+  }, {
+    "name" : "thread",
+    "value" : "7608-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_signup"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_info",
+    "value" : "['signup_10', '测试用户名为特殊字符', '/apitest/signup/', 'post', 'json', '{/"username/":/"test12/",/"password/":/"阳靖康/",/"confirm/":/"阳靖康/",/"name/":/"注册密码为中文/"}', '{/"Status/":1000,/"Result/":/"Success/",/"Message/":/"注册成功/"}', 'users, info', /"select count(*),(select count(*) from info where name='注册密码为中文') from users where username='阳靖康'/", '(1,1)']"
+  } ],
+  "links" : [ {
+    "name" : "缺陷标题连接测试www.baidu.com",
+    "url" : "缺陷标题连接测试www.baidu.com",
+    "type" : "issue"
+  }, {
+    "name" : "www.baidu.com",
+    "url" : "www.baidu.com",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=2)" ]
+  },
+  "source" : "b3c30962baaa32b0.json",
+  "parameterValues" : [ "['signup_10', '测试用户名为特殊字符', '/apitest/signup/', 'post', 'json', '{/"username/":/"test12/",/"password/":/"阳靖康/",/"confirm/":/"阳靖康/",/"name/":/"注册密码为中文/"}', '{/"Status/":1000,/"Result/":/"Success/",/"Message/":/"注册成功/"}', 'users, info', /"select count(*),(select count(*) from info where name='注册密码为中文') from users where username='阳靖康'/", '(1,1)']" ]
+}

@@ -1,0 +1,2 @@
+data_bases: {'host': '192.168.187.129', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+data_ip: http://192.168.187.129:80

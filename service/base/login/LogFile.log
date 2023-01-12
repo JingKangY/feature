@@ -1,0 +1,4 @@
+D 2022-11-22 01:08:18,933| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件D:/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '192.168.11.132', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+I 2022-11-22 01:08:18,938| INFO     | [mysql.py:mysql:connect:28] - ===============>成功连接数据库,参数为：{'host': '192.168.11.132', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}<===================
+D 2022-11-22 01:08:34,236| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件D:/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '192.168.11.132', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+I 2022-11-22 01:08:34,270| INFO     | [mysql.py:mysql:connect:28] - ===============>成功连接数据库,参数为：{'host': '192.168.11.132', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}<===================

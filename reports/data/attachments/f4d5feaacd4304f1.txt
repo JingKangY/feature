@@ -1,0 +1,6 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:228 Starting new HTTP connection (1): 192.168.61.136:80
+DEBUG    urllib3.connectionpool:connectionpool.py:456 http://192.168.61.136:80 "POST /apitest/login/ HTTP/1.1" 200 69
+DEBUG    root:requests.py:22 发起请求的参数为：{'url': 'http://192.168.61.136:80/apitest/login/', 'method': 'post', 'data': {'username': '*%$', 'password': '123456'}}
+DEBUG    root:asserts.py:17 Response实际结果为：{'Status': 1003, 'Result': 'Username error', 'Message': '用户名错误'}
+DEBUG    root:asserts.py:18 Response预期结果为：{'Status': 1003, 'Result': 'Username error', 'Message': '用户名错误'}
+INFO     root:asserts.py:20 断言用例通过！

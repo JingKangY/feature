@@ -1,0 +1,6 @@
+D 2022-11-23 02:10:54,917| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 124.223.214.171:8080
+D 2022-11-23 02:10:55,112| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://124.223.214.171:8080 "POST /integration/login HTTP/1.1" 200 None
+D 2022-11-23 02:10:55,112| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://124.223.214.171:8080/integration/login', 'method': 'post', 'json': {'data': {'password': '12345678', 'userName': 'root'}}}
+D 2022-11-23 02:11:14,750| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 124.223.214.171:8080
+D 2022-11-23 02:11:14,965| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://124.223.214.171:8080 "POST /integration/login HTTP/1.1" 200 None
+D 2022-11-23 02:11:14,978| DEBUG    | [requeststart.py:requeststart:send_request_other:37] - 发起请求的参数为：{'url': 'http://124.223.214.171:8080/integration/login', 'method': 'post', 'json': {'data': {'password': '12345678', 'userName': 'root'}}}

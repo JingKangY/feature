@@ -1,0 +1,40 @@
+[1;32mI [1;32m2022-08-24 08:37:02,336[0m| [1;32mINFO     [0m| [1;32m[log.py[0m:[1;32mlog[0m:[1;32m<module>[0m:[1;32m77] [0m- [1;32m 晚上好[0m
+[1;34mD [1;34m2022-08-24 08:37:02,336[0m| [1;34mDEBUG    [0m| [1;34m[log.py[0m:[1;34mlog[0m:[1;34m<module>[0m:[1;34m78] [0m- [1;34m晚上好[0m
+[1;31mE [1;31m2022-08-24 08:37:02,336[0m| [1;31mERROR    [0m| [1;31m[log.py[0m:[1;31mlog[0m:[1;31m<module>[0m:[1;31m79] [0m- [1;31m 晚上好[0m
+[1;33mW [1;33m2022-08-24 08:37:02,337[0m| [1;33mWARNING  [0m| [1;33m[log.py[0m:[1;33mlog[0m:[1;33m<module>[0m:[1;33m80] [0m- [1;33m 晚上好[0m
+[1;35mC [1;35m2022-08-24 08:37:02,337[0m| [1;35mCRITICAL [0m| [1;35m[log.py[0m:[1;35mlog[0m:[1;35m<module>[0m:[1;35m81] [0m- [1;35m晚上好[0m
+I 2022-08-24 08:40:19,886| INFO     | [log.py:log:<module>[line:79] -  晚上好
+D 2022-08-24 08:40:19,886| DEBUG    | [log.py:log:<module>[line:80] - 晚上好
+E 2022-08-24 08:40:19,887| ERROR    | [log.py:log:<module>[line:81] -  晚上好
+W 2022-08-24 08:40:19,887| WARNING  | [log.py:log:<module>[line:82] -  晚上好
+C 2022-08-24 08:40:19,887| CRITICAL | [log.py:log:<module>[line:83] - 晚上好
+I 2022-08-24 08:41:35,834| INFO     | [log.py:log:<module>[line:79] - 晚上好
+D 2022-08-24 08:41:35,835| DEBUG    | [log.py:log:<module>[line:80] - 晚上好
+E 2022-08-24 08:41:35,835| ERROR    | [log.py:log:<module>[line:81] - 晚上好
+W 2022-08-24 08:41:35,835| WARNING  | [log.py:log:<module>[line:82] - 晚上好
+C 2022-08-24 08:41:35,835| CRITICAL | [log.py:log:<module>[line:83] - 晚上好
+I 2022-08-24 09:27:15,020| INFO     | [log.py:log:<module>[line:79] - 晚上好
+D 2022-08-24 09:27:15,020| DEBUG    | [log.py:log:<module>[line:80] - 晚上好
+E 2022-08-24 09:27:15,020| ERROR    | [log.py:log:<module>[line:81] - 晚上好
+W 2022-08-24 09:27:15,020| WARNING  | [log.py:log:<module>[line:82] - 晚上好
+C 2022-08-24 09:27:15,020| CRITICAL | [log.py:log:<module>[line:83] - 晚上好
+I 2022-08-24 09:28:17,783| INFO     | [log.py:log:<module>:79] - 晚上好
+D 2022-08-24 09:28:17,783| DEBUG    | [log.py:log:<module>:80] - 晚上好
+E 2022-08-24 09:28:17,783| ERROR    | [log.py:log:<module>:81] - 晚上好
+W 2022-08-24 09:28:17,783| WARNING  | [log.py:log:<module>:82] - 晚上好
+C 2022-08-24 09:28:17,783| CRITICAL | [log.py:log:<module>:83] - 晚上好
+I 2022-08-24 11:47:03,824| INFO     | [log.py:log:<module>:76] - 晚上好
+D 2022-08-24 11:47:03,825| DEBUG    | [log.py:log:<module>:77] - 晚上好
+E 2022-08-24 11:47:03,825| ERROR    | [log.py:log:<module>:78] - 晚上好
+W 2022-08-24 11:47:03,825| WARNING  | [log.py:log:<module>:79] - 晚上好
+C 2022-08-24 11:47:03,825| CRITICAL | [log.py:log:<module>:80] - 晚上好
+I 2022-08-24 14:42:21,510| INFO     | [log.py:log:<module>:76] - 晚上好
+D 2022-08-24 14:42:21,510| DEBUG    | [log.py:log:<module>:77] - 晚上好
+E 2022-08-24 14:42:21,511| ERROR    | [log.py:log:<module>:78] - 晚上好
+W 2022-08-24 14:42:21,511| WARNING  | [log.py:log:<module>:79] - 晚上好
+C 2022-08-24 14:42:21,511| CRITICAL | [log.py:log:<module>:80] - 晚上好
+I 2022-08-24 16:44:19,407| INFO     | [log.py:log:<module>:76] - 晚上好
+D 2022-08-24 16:44:19,407| DEBUG    | [log.py:log:<module>:77] - 晚上好
+E 2022-08-24 16:44:19,407| ERROR    | [log.py:log:<module>:78] - 晚上好
+W 2022-08-24 16:44:19,407| WARNING  | [log.py:log:<module>:79] - 晚上好
+C 2022-08-24 16:44:19,407| CRITICAL | [log.py:log:<module>:80] - 晚上好

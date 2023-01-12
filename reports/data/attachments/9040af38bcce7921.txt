@@ -1,0 +1,42 @@
+DEBUG    root:conf.py:29 读数据库服务器配置文件../confs/db.conf成功，数据库信息是{'host': '192.168.61.136', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+DEBUG    root:mysql.py:27 ==============================>成功连接数据库<===============================
+DEBUG    root:mysql.py:88 执行SQL语句=====>DELETE FROM info WHERE id=4<=====成功
+DEBUG    root:mysql.py:88 执行SQL语句=====>DELETE FROM users WHERE id=4<=====成功
+DEBUG    root:mysql.py:39 执行SQL语句=====>INSERT INTO users(id, username, password) VALUES(4, 'test01', md5('123456'))<=====成功
+DEBUG    root:mysql.py:88 执行SQL语句=====>DELETE FROM info WHERE id=5<=====成功
+DEBUG    root:mysql.py:88 执行SQL语句=====>DELETE FROM users WHERE id=5<=====成功
+DEBUG    root:mysql.py:39 执行SQL语句=====>INSERT INTO users(id, username, password) VALUES(5, 'test02', md5('123456'))<=====成功
+DEBUG    root:mysql.py:88 执行SQL语句=====>INSERT INTO info(id, name) VALUES(5, '登录密码为空用户')<=====成功
+DEBUG    root:mysql.py:88 执行SQL语句=====>DELETE FROM info WHERE name='登录用户名错误用户'<=====成功
+DEBUG    root:mysql.py:88 执行SQL语句=====>DELETE FROM users WHERE username='test03'<=====成功
+DEBUG    root:mysql.py:88 执行SQL语句=====>DELETE FROM info WHERE id=6<=====成功
+DEBUG    root:mysql.py:88 执行SQL语句=====>DELETE FROM users WHERE id=6<=====成功
+DEBUG    root:mysql.py:39 执行SQL语句=====>INSERT INTO users(id, username, password) VALUES(6, 'test04', md5('123456'))<=====成功
+DEBUG    root:mysql.py:88 执行SQL语句=====>INSERT INTO info(id, name) VALUES(6, '登录密码错误用户')<=====成功
+DEBUG    root:mysql.py:88 执行SQL语句=====>DELETE FROM info WHERE name='登录用户名与密码均错误用户'<=====成功
+DEBUG    root:mysql.py:88 执行SQL语句=====>DELETE FROM users WHERE username='test05'<=====成功
+DEBUG    root:mysql.py:88 执行SQL语句=====>DELETE FROM info WHERE id=8<=====成功
+DEBUG    root:mysql.py:88 执行SQL语句=====>DELETE FROM users WHERE id=8<=====成功
+DEBUG    root:mysql.py:39 执行SQL语句=====>INSERT INTO users(id, username, password) VALUES(8, 'test15', md5('123456'))<=====成功
+DEBUG    root:mysql.py:88 执行SQL语句=====>INSERT INTO info(id, name) VALUES(8, '密码超过限制长度')<=====成功
+DEBUG    urllib3.connectionpool:connectionpool.py:228 Starting new HTTP connection (1): 192.168.61.136:80
+DEBUG    urllib3.connectionpool:connectionpool.py:456 http://192.168.61.136:80 "POST /apitest/login/ HTTP/1.1" 200 70
+DEBUG    root:requests.py:22 发起请求的参数为：{'url': 'http://192.168.61.136:80/apitest/login/', 'method': 'post', 'data': {'username': 'test01', 'password': '123456'}}
+DEBUG    root:asserts.py:17 Response实际结果为：{'Status': 1000, 'Result': 'Usercheck ok', 'Message': '登录验证成功'}
+DEBUG    root:asserts.py:18 Response预期结果为：{'Status': 1000, 'Result': 'Usercheck ok', 'Message': '登录验证成'}
+ERROR    root:asserts.py:22 断言失败，Response实际结果为：{'Status': 1000, 'Result': 'Usercheck ok', 'Message': '登录验证成功'}，Response预期结果为：{'Status': 1000, 'Result': 'Usercheck ok', 'Message': '登录验证成'}
+ERROR    root:asserts.py:23 断言用例不通过！
+DEBUG    urllib3.connectionpool:connectionpool.py:228 Starting new HTTP connection (1): 192.168.61.136:80
+DEBUG    urllib3.connectionpool:connectionpool.py:456 http://192.168.61.136:80 "POST /apitest/login/ HTTP/1.1" 200 70
+DEBUG    root:requests.py:22 发起请求的参数为：{'url': 'http://192.168.61.136:80/apitest/login/', 'method': 'post', 'data': {'username': 'test01', 'password': '123456'}}
+DEBUG    root:asserts.py:17 Response实际结果为：{'Status': 1000, 'Result': 'Usercheck ok', 'Message': '登录验证成功'}
+DEBUG    root:asserts.py:18 Response预期结果为：{'Status': 1000, 'Result': 'Usercheck ok', 'Message': '登录验证成'}
+ERROR    root:asserts.py:22 断言失败，Response实际结果为：{'Status': 1000, 'Result': 'Usercheck ok', 'Message': '登录验证成功'}，Response预期结果为：{'Status': 1000, 'Result': 'Usercheck ok', 'Message': '登录验证成'}
+ERROR    root:asserts.py:23 断言用例不通过！
+DEBUG    urllib3.connectionpool:connectionpool.py:228 Starting new HTTP connection (1): 192.168.61.136:80
+DEBUG    urllib3.connectionpool:connectionpool.py:456 http://192.168.61.136:80 "POST /apitest/login/ HTTP/1.1" 200 70
+DEBUG    root:requests.py:22 发起请求的参数为：{'url': 'http://192.168.61.136:80/apitest/login/', 'method': 'post', 'data': {'username': 'test01', 'password': '123456'}}
+DEBUG    root:asserts.py:17 Response实际结果为：{'Status': 1000, 'Result': 'Usercheck ok', 'Message': '登录验证成功'}
+DEBUG    root:asserts.py:18 Response预期结果为：{'Status': 1000, 'Result': 'Usercheck ok', 'Message': '登录验证成'}
+ERROR    root:asserts.py:22 断言失败，Response实际结果为：{'Status': 1000, 'Result': 'Usercheck ok', 'Message': '登录验证成功'}，Response预期结果为：{'Status': 1000, 'Result': 'Usercheck ok', 'Message': '登录验证成'}
+ERROR    root:asserts.py:23 断言用例不通过！

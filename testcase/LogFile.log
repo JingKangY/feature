@@ -1,0 +1,14 @@
+D 2022-11-24 23:38:23,431| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件D:/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '192.168.11.137', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+I 2022-11-24 23:38:23,434| INFO     | [mysql.py:mysql:connect:28] - ===============>成功连接数据库,参数为：{'host': '192.168.11.137', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}<===================
+D 2022-11-24 23:38:23,436| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 124.223.214.171:8080
+D 2022-11-24 23:38:23,544| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://124.223.214.171:8080 "POST /integration/login HTTP/1.1" 200 None
+I 2022-11-24 23:38:23,557| INFO     | [requeststart.py:requeststart:get_session_cookie:37] - 发起请求的参数为：{'url': 'http://124.223.214.171:8080/integration/login', 'method': 'post', 'json': {'data': {'password': '12345678', 'userName': 'root'}}}
+D 2022-11-24 23:38:23,559| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 124.223.214.171:8080
+D 2022-11-24 23:38:23,668| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://124.223.214.171:8080 "POST /integration/login HTTP/1.1" 200 None
+I 2022-11-24 23:38:23,668| INFO     | [requeststart.py:requeststart:get_session_cookie:37] - 发起请求的参数为：{'url': 'http://124.223.214.171:8080/integration/login', 'method': 'post', 'json': {'data': {'password': '12345678', 'userName': 'root'}}}
+D 2022-11-24 23:38:23,670| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 124.223.214.171:8080
+D 2022-11-24 23:38:23,751| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://124.223.214.171:8080 "GET /integration/ui/frmEditDivision/app HTTP/1.1" 200 None
+D 2022-11-24 23:38:23,752| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://124.223.214.171:8080/integration/ui/frmEditDivision/app', 'method': 'get', 'headers': {'cookie': 'JSESSIONID=0d111546-fcfa-404c-85c4-de8d0fcabefe'}}
+D 2022-11-24 23:38:23,754| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 124.223.214.171:8080
+D 2022-11-24 23:38:23,858| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://124.223.214.171:8080 "POST /integration/api/save HTTP/1.1" 200 None
+D 2022-11-24 23:38:23,859| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'headers': {'cookie': 'JSESSIONID=d2813bb8-1c5a-4a7e-aa6c-67c182b20e1c', 'token': 'c9cc0933a5614428bc3c1fd3c7123610'}, 'method': 'post', 'url': 'http://124.223.214.171:8080/integration/api/save', 'json': {'data': {'id': '', 'eq_name': '太垃1123131圾内', 'Mode': 'Add'}, 'hmac': ''}}

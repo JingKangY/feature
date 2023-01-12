@@ -1,0 +1,12 @@
+D 2022-11-22 21:17:32,213| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 124.223.214.171:8080
+E 2022-11-22 21:17:32,215| ERROR    | [requeststart.py:requeststart:send_request:26] - 发起请求失败，请求参数为；{'url': 'http://124.223.214.171:8080/integration/login', 'method': 'post', 'json': {'data': {'password': '12345678', 'userName': 'root'}}}
+E 2022-11-22 21:17:32,215| ERROR    | [requeststart.py:requeststart:send_request:27] - 发生错误的原因为：HTTPConnectionPool(host='124.223.214.171', port=8080): Max retries exceeded with url: /integration/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F0892EEE0>: Failed to establish a new connection: [WinError 10065] 套接字操作尝试一个无法连接的主机。'))
+D 2022-11-22 21:22:02,856| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 124.223.214.171:8080
+D 2022-11-22 21:22:03,099| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://124.223.214.171:8080 "POST /integration/login HTTP/1.1" 200 None
+D 2022-11-22 21:22:03,100| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://124.223.214.171:8080/integration/login', 'method': 'post', 'json': {'data': {'password': '12345678', 'userName': 'root'}}}
+D 2022-11-22 21:23:33,462| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 124.223.214.171:8080
+D 2022-11-22 21:23:33,669| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://124.223.214.171:8080 "POST /integration/login HTTP/1.1" 200 None
+D 2022-11-22 21:23:33,670| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://124.223.214.171:8080/integration/login', 'method': 'post', 'json': {'data': {'password': '12345678', 'userName': 'root'}}}
+D 2022-11-22 21:24:53,377| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 124.223.214.171:8080
+D 2022-11-22 21:24:53,566| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://124.223.214.171:8080 "POST /integration/login HTTP/1.1" 200 None
+D 2022-11-22 21:24:53,568| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://124.223.214.171:8080/integration/login', 'method': 'post', 'json': {'data': {'password': '12345678', 'userName': 'root'}}}

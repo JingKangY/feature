@@ -1,0 +1,30 @@
+DEBUG    root:conf.py:30 读数据库服务器配置文件/Users/yangjingkang/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '172.16.9.128', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+INFO     root:mysql.py:28 ===============>成功连接数据库,参数为：{'host': '172.16.9.128', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}<===================
+INFO     root:preposition_fixture.py:30 *********************开始数据库连接*********************
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM info WHERE name='成功注册用户'<=====成功
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM users WHERE username='test06'<=====成功
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM info WHERE name='注册密码为空用户'<=====成功
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM info WHERE name='注册确认密码为空用户'<=====成功
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM users WHERE username='test08'<=====成功
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM users WHERE username='test09'<=====成功
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM info WHERE name='注册两个密码不一致用户'<=====成功
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM users WHERE username='test10'<=====成功
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM info WHERE id=7<=====成功
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM users WHERE id=7<=====成功
+DEBUG    root:mysql.py:44 执行SQL语句=====>INSERT INTO users(id, username, password) VALUES(7, 'test11', md5('123456'))<=====成功
+DEBUG    root:mysql.py:44 执行SQL语句=====>INSERT INTO info(id, name) VALUES(7, '重复注册用户')<=====成功
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM info WHERE name='中文注册用户'<=====成功
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM users WHERE username='阳靖康'<=====成功
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM info WHERE name='特殊字符用户'<=====成功
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM users WHERE username='%￥#@&*'<=====成功
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM info WHERE name='注册密码为中文'<=====成功
+DEBUG    root:mysql.py:94 执行SQL语句=====>DELETE FROM users WHERE username='test12'<=====成功
+DEBUG    urllib3.connectionpool:connectionpool.py:227 Starting new HTTP connection (1): 172.16.9.128:80
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://172.16.9.128:80 "POST /apitest/signup/ HTTP/1.1" 200 59
+DEBUG    root:requeststart.py:22 发起请求的参数为：{'url': 'http://172.16.9.128:80/apitest/signup/', 'method': 'post', 'json': {'username': 'test06', 'password': '123456', 'confirm': '123456', 'name': '成功注册用户'}}
+DEBUG    root:asserts.py:18 Response实际结果为：{'Status': 1000, 'Result': 'Success', 'Message': '注册成功'}
+DEBUG    root:asserts.py:19 Response预期结果为：{'Status': 1000, 'Result': 'Success', 'Message': '注册成功'}
+INFO     root:asserts.py:21 断言用例通过！
+DEBUG    root:mysql.py:152 验库的预期结果：(1, 1)
+DEBUG    root:mysql.py:153 验库的实际结果：(1, 1)
+INFO     root:mysql.py:155 验证数据库用例通过！

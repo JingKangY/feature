@@ -1,0 +1,10 @@
+I 2022-12-08 12:49:09,342| INFO     | [log.py:log:<module>:77] - 晚上好
+D 2022-12-08 12:49:09,343| DEBUG    | [log.py:log:<module>:78] - 晚上好
+E 2022-12-08 12:49:09,343| ERROR    | [log.py:log:<module>:79] - 晚上好
+W 2022-12-08 12:49:09,343| WARNING  | [log.py:log:<module>:80] - 晚上好
+C 2022-12-08 12:49:09,343| CRITICAL | [log.py:log:<module>:81] - 晚上好
+I 2022-12-08 12:49:19,806| INFO     | [log.py:log:<module>:77] - 晚上好
+D 2022-12-08 12:49:19,807| DEBUG    | [log.py:log:<module>:78] - 晚上好
+E 2022-12-08 12:49:19,807| ERROR    | [log.py:log:<module>:79] - 晚上好
+W 2022-12-08 12:49:19,807| WARNING  | [log.py:log:<module>:80] - 晚上好
+C 2022-12-08 12:49:19,807| CRITICAL | [log.py:log:<module>:81] - 晚上好

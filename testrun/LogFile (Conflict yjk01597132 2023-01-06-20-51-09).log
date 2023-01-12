@@ -1,0 +1,47 @@
+D 2023-01-06 20:51:00,359| DEBUG    | [factory.py:factory:<module>:19] - Not in REPL -> leaving logger event level as is.
+D 2023-01-06 20:51:09,318| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.address`.
+D 2023-01-06 20:51:09,320| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.address` has been localized to `en_US`.
+D 2023-01-06 20:51:09,326| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.automotive`.
+D 2023-01-06 20:51:09,327| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.automotive` has been localized to `en_US`.
+D 2023-01-06 20:51:09,328| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.bank`.
+D 2023-01-06 20:51:09,329| DEBUG    | [factory.py:factory:_find_provider_class:105] - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+D 2023-01-06 20:51:09,330| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.barcode`.
+D 2023-01-06 20:51:09,331| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.barcode` has been localized to `en_US`.
+D 2023-01-06 20:51:09,334| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.color`.
+D 2023-01-06 20:51:09,335| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.color` has been localized to `en_US`.
+D 2023-01-06 20:51:09,336| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.company`.
+D 2023-01-06 20:51:09,338| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.company` has been localized to `en_US`.
+D 2023-01-06 20:51:09,339| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.credit_card`.
+D 2023-01-06 20:51:09,339| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.credit_card` has been localized to `en_US`.
+D 2023-01-06 20:51:09,340| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.currency`.
+D 2023-01-06 20:51:09,341| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.currency` has been localized to `en_US`.
+D 2023-01-06 20:51:09,342| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.date_time`.
+D 2023-01-06 20:51:09,343| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.date_time` has been localized to `en_US`.
+D 2023-01-06 20:51:09,345| DEBUG    | [factory.py:factory:_find_provider_class:125] - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+D 2023-01-06 20:51:09,345| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.geo`.
+D 2023-01-06 20:51:09,345| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.geo` has been localized to `en_US`.
+D 2023-01-06 20:51:09,346| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.internet`.
+D 2023-01-06 20:51:09,348| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.internet` has been localized to `en_US`.
+D 2023-01-06 20:51:09,350| DEBUG    | [factory.py:factory:_find_provider_class:125] - Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+D 2023-01-06 20:51:09,350| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.job`.
+D 2023-01-06 20:51:09,351| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.job` has been localized to `en_US`.
+D 2023-01-06 20:51:09,368| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.lorem`.
+D 2023-01-06 20:51:09,369| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.lorem` has been localized to `en_US`.
+D 2023-01-06 20:51:09,373| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.misc`.
+D 2023-01-06 20:51:09,373| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.misc` has been localized to `en_US`.
+D 2023-01-06 20:51:09,374| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.person`.
+D 2023-01-06 20:51:09,376| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.person` has been localized to `en_US`.
+D 2023-01-06 20:51:09,397| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.phone_number`.
+D 2023-01-06 20:51:09,399| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.phone_number` has been localized to `en_US`.
+D 2023-01-06 20:51:09,400| DEBUG    | [factory.py:factory:_find_provider_class:125] - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+D 2023-01-06 20:51:09,400| DEBUG    | [factory.py:factory:_find_provider_class:125] - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+D 2023-01-06 20:51:09,400| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.ssn`.
+D 2023-01-06 20:51:09,402| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.ssn` has been localized to `en_US`.
+D 2023-01-06 20:51:09,405| DEBUG    | [factory.py:factory:_find_provider_class:125] - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+D 2023-01-06 20:51:09,417| DEBUG    | [connectionpool.py:connectionpool:_new_conn:1003] - Starting new HTTPS connection (1): p10496-hk-bbs.ejoy.com:443
+D 2023-01-06 20:51:09,783| DEBUG    | [connectionpool.py:connectionpool:_make_request:456] - https://p10496-hk-bbs.ejoy.com:443 "GET /api/bbs/S3G%E4%BA%8C%E5%91%A8%E5%B9%B4%E4%B8%A4%E8%A1%8C%E6%83%85%E4%B9%A6/index?count=100 HTTP/1.1" 200 None
+D 2023-01-06 20:51:09,784| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'https://p10496-hk-bbs.ejoy.com/api/bbs/S3G二周年两行情书/index?count=100', 'method': 'get'}
+D 2023-01-06 20:51:09,786| DEBUG    | [asserts.py:asserts:assert_code:30] - Response_Code实际结果为：6088b66e2230325e4b1970e5120a11fc
+D 2023-01-06 20:51:09,786| DEBUG    | [asserts.py:asserts:assert_code:31] - Response_Code预期结果为：3e4547b4bb12e9047950252d64b63472
+E 2023-01-06 20:51:09,786| ERROR    | [asserts.py:asserts:assert_code:35] - 断言失败，Response_Code实际结果为：6088b66e2230325e4b1970e5120a11fc，Response预期结果为：3e4547b4bb12e9047950252d64b63472
+E 2023-01-06 20:51:09,786| ERROR    | [asserts.py:asserts:assert_code:36] - 断言用例不通过！

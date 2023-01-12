@@ -1,0 +1,21 @@
+D 2022-11-21 16:08:55,172| DEBUG    | [conf.py:conf:conf_get_db:29] - 读数据库服务器配置文件../confs/db.conf成功，数据库信息是{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+D 2022-11-21 16:08:55,182| DEBUG    | [mysql.py:mysql:connect:28] - ==============================>成功连接数据库<===============================
+D 2022-11-21 16:09:22,781| DEBUG    | [conf.py:conf:conf_get_db:29] - 读数据库服务器配置文件../confs/db.conf成功，数据库信息是{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+D 2022-11-21 16:09:22,810| DEBUG    | [mysql.py:mysql:connect:28] - ==============================>成功连接数据库<===============================
+D 2022-11-21 18:20:59,585| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件D:/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+D 2022-11-21 18:21:27,499| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件D:/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+D 2022-11-21 18:22:59,578| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件D:/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+D 2022-11-21 18:34:09,555| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件D:/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+D 2022-11-21 18:34:09,579| DEBUG    | [mysql.py:mysql:connect_db:29] - ==============================>成功连接数据库,参数为：{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}<===============================
+D 2022-11-21 18:35:24,092| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件D:/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+D 2022-11-21 18:35:24,114| DEBUG    | [mysql.py:mysql:connect:29] - ==============================>成功连接数据库,参数为：{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}<===============================
+D 2022-11-21 18:37:44,704| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件D:/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+D 2022-11-21 18:37:44,709| DEBUG    | [mysql.py:mysql:connect:29] - 成功连接数据库,参数为：{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+D 2022-11-21 18:37:57,152| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件D:/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+I 2022-11-21 18:37:57,167| INFO     | [mysql.py:mysql:connect:29] - 成功连接数据库,参数为：{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+D 2022-11-21 19:04:46,280| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件D:/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+I 2022-11-21 19:04:46,307| INFO     | [mysql.py:mysql:connect:29] - 成功连接数据库,参数为：{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+D 2022-11-21 19:05:19,958| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件D:/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+I 2022-11-21 19:05:19,977| INFO     | [mysql.py:mysql:connect:30] - 成功连接数据库,参数为：{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+D 2022-11-21 19:06:23,432| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件D:/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+D 2022-11-21 19:06:38,666| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件D:/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '192.168.11.131', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}

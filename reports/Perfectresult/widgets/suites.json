@@ -1,0 +1,48 @@
+{
+  "total" : 4,
+  "items" : [ {
+    "uid" : "e46053f8cfb9c597ea92a1f8cadf732c",
+    "name" : "testcase.login",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 10,
+      "unknown" : 0,
+      "total" : 13
+    }
+  }, {
+    "uid" : "f250082ce6df8b6c169c03230fc7f562",
+    "name" : "testcase.erxing_Love_Letter",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "7f52764d02b6adc160b646e85ecef22f",
+    "name" : "testcase.signup",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 11
+    }
+  }, {
+    "uid" : "0bfc7e6bd42d0f6626c1f43c8ebc8957",
+    "name" : "testcase.shuangchuanglogin",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 4,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 4
+    }
+  } ]
+}

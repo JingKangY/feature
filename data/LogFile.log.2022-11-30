@@ -1,0 +1,8 @@
+I 2022-11-25 01:05:06,479| INFO     | [get_data.py:get_data:read_all_excel:37] - 成功获取所有用例，共1条用例
+I 2022-11-25 01:05:06,481| INFO     | [get_data.py:get_data:read_all_excel:38] - [['/integration/ui/frmEditDivision/app', 'get']]
+I 2022-11-25 01:05:55,264| INFO     | [get_data.py:get_data:read_all_excel:37] - 成功获取所有用例，共1条用例
+I 2022-11-25 01:05:55,264| INFO     | [get_data.py:get_data:read_all_excel:38] - [['/integration/ui/frmEditDivision/app', 'get']]
+I 2022-11-25 01:11:48,548| INFO     | [get_data.py:get_data:read_all_excel:37] - 成功获取所有用例，共1条用例
+I 2022-11-25 01:11:48,548| INFO     | [get_data.py:get_data:read_all_excel:38] - [['/integration/ui/frmEditDivision/app', 'get']]
+I 2022-11-25 01:12:05,061| INFO     | [get_data.py:get_data:read_all_excel:37] - 成功获取所有用例，共1条用例
+I 2022-11-25 01:12:05,061| INFO     | [get_data.py:get_data:read_all_excel:38] - [['/integration/ui/frmEditDivision/app', 'get']]

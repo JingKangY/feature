@@ -1,0 +1,9 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:228 Starting new HTTP connection (1): 192.168.61.136:80
+DEBUG    urllib3.connectionpool:connectionpool.py:456 http://192.168.61.136:80 "POST /apitest/signup/ HTTP/1.1" 200 98
+DEBUG    root:requests.py:22 发起请求的参数为：{'url': 'http://192.168.61.136:80/apitest/signup/', 'method': 'post', 'json': {'username': 'test10', 'password': '123456', 'confirm': '123', 'name': '注册两个密码不一致用户'}}
+DEBUG    root:asserts.py:17 Response实际结果为：{'Status': 1009, 'Result': 'Confirm password error', 'Message': '注册失败，两个密码不一致'}
+DEBUG    root:asserts.py:18 Response预期结果为：{'Status': 1009, 'Result': 'Confirm password error', 'Message': '注册失败，两个密码不一致'}
+INFO     root:asserts.py:20 断言用例通过！
+DEBUG    root:mysql.py:146 验库的预期结果：(0, 0)
+DEBUG    root:mysql.py:147 验库的实际结果：(0, 0)
+INFO     root:mysql.py:149 验证数据库用例通过！

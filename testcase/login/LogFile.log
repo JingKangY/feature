@@ -1,0 +1,269 @@
+I 2022-12-16 23:33:11,143| INFO     | [get_data.py:get_data:read_special_list_excel:137] - 成功获取登录login所有用例，共12条用例
+I 2022-12-16 23:33:11,143| INFO     | [get_data.py:get_data:read_special_list_excel:138] - [['测试成功登录', '/apitest/login/', 'post', 'data', "{'username':'test01','password':'123456'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1000, 'Usercheck ok', '登录验证成功'], ['测试用户名为空', '/apitest/login/', 'post', 'data', "{'username':'','password':'123456'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1001, 'Username is null', '用户名不能为空'], ['测试密码为空', '/apitest/login/', 'post', 'data', "{'username':'test02','password':''}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1002, 'Password is null', '密码不能为空'], ['测试用户名和密码均为空', '/apitest/login/', 'post', 'data', "{'username':'','password':''}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1001, 'Username is null', '用户名不能为空'], ['测试用户名错误', '/apitest/login/', 'post', 'data', "{'username':'test03','password':'123456'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1003, 'Username error', '用户名错误'], ['测试密码错误', '/apitest/login/', 'post', 'data', "{'username':'test03','password':'123'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1003, 'Password error', '密码错误'], ['测试用户名和密码均错误', '/apitest/login/', 'post', 'data', "{'username':'test05','password':'123'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1003, 'Username error', '用户名错误'], ['测试用户名为中文', '/apitest/login/', 'post', 'data', "{'username':'你好','password':'123456'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1003, 'Username error', '用户名错误'], ['测试用户名为数字', '/apitest/login/', 'post', 'data', "{'username':'123456','password':'123456'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1003, 'Username error', '用户名错误'], ['测试密码为无效最大边界值', '/apitest/login/', 'post', 'data', "{'username':'test05','password':'12345678945647898468464'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1003, 'Username error', '用户名错误'], ['测试用户名为特殊字符', '/apitest/login/', 'post', 'data', "{'username':'*%$','password':'123456'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1003, 'Username error', '用户名错误'], ['测试密码长度超过限制', '/apitest/login/', 'post', 'data', "{'username':'test15','password':'123456784948494848484486486486'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1004, 'Password error', '用户名错误']]
+D 2022-12-16 23:33:11,150| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.address`.
+D 2022-12-16 23:33:11,156| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.address` has been localized to `en_US`.
+D 2022-12-16 23:33:11,159| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.automotive`.
+D 2022-12-16 23:33:11,162| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.automotive` has been localized to `en_US`.
+D 2022-12-16 23:33:11,163| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.bank`.
+D 2022-12-16 23:33:11,165| DEBUG    | [factory.py:factory:_find_provider_class:105] - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+D 2022-12-16 23:33:11,167| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.barcode`.
+D 2022-12-16 23:33:11,167| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.barcode` has been localized to `en_US`.
+D 2022-12-16 23:33:11,169| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.color`.
+D 2022-12-16 23:33:11,171| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.color` has been localized to `en_US`.
+D 2022-12-16 23:33:11,172| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.company`.
+D 2022-12-16 23:33:11,174| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.company` has been localized to `en_US`.
+D 2022-12-16 23:33:11,175| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.credit_card`.
+D 2022-12-16 23:33:11,176| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.credit_card` has been localized to `en_US`.
+D 2022-12-16 23:33:11,177| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.currency`.
+D 2022-12-16 23:33:11,178| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.currency` has been localized to `en_US`.
+D 2022-12-16 23:33:11,179| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.date_time`.
+D 2022-12-16 23:33:11,182| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.date_time` has been localized to `en_US`.
+D 2022-12-16 23:33:11,183| DEBUG    | [factory.py:factory:_find_provider_class:125] - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+D 2022-12-16 23:33:11,183| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.geo`.
+D 2022-12-16 23:33:11,184| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.geo` has been localized to `en_US`.
+D 2022-12-16 23:33:11,185| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.internet`.
+D 2022-12-16 23:33:11,188| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.internet` has been localized to `en_US`.
+D 2022-12-16 23:33:11,189| DEBUG    | [factory.py:factory:_find_provider_class:125] - Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+D 2022-12-16 23:33:11,189| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.job`.
+D 2022-12-16 23:33:11,192| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.job` has been localized to `en_US`.
+D 2022-12-16 23:33:11,194| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.lorem`.
+D 2022-12-16 23:33:11,196| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.lorem` has been localized to `en_US`.
+D 2022-12-16 23:33:11,198| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.misc`.
+D 2022-12-16 23:33:11,199| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.misc` has been localized to `en_US`.
+D 2022-12-16 23:33:11,200| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.person`.
+D 2022-12-16 23:33:11,205| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.person` has been localized to `en_US`.
+D 2022-12-16 23:33:11,211| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.phone_number`.
+D 2022-12-16 23:33:11,217| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.phone_number` has been localized to `en_US`.
+D 2022-12-16 23:33:11,218| DEBUG    | [factory.py:factory:_find_provider_class:125] - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+D 2022-12-16 23:33:11,219| DEBUG    | [factory.py:factory:_find_provider_class:125] - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+D 2022-12-16 23:33:11,219| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.ssn`.
+D 2022-12-16 23:33:11,224| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.ssn` has been localized to `en_US`.
+D 2022-12-16 23:33:11,227| DEBUG    | [factory.py:factory:_find_provider_class:125] - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+D 2022-12-16 23:33:11,228| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件/Users/yangjingkang/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '172.16.9.128', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+I 2022-12-16 23:33:11,233| INFO     | [mysql.py:mysql:connect:28] - ===============>成功连接数据库,参数为：{'host': '172.16.9.128', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}<===================
+I 2022-12-16 23:33:11,233| INFO     | [preposition_fixture.py:preposition_fixture:connect_db:29] - *********************开始数据库连接*********************
+D 2022-12-16 23:33:11,241| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 124.223.214.171:8080
+D 2022-12-16 23:33:11,367| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://124.223.214.171:8080 "POST /integration/login HTTP/1.1" 200 None
+I 2022-12-16 23:33:11,369| INFO     | [requeststart.py:requeststart:get_session_cookie:37] - 发起请求的参数为：{'url': 'http://124.223.214.171:8080/integration/login', 'method': 'post', 'json': {'data': {'password': '12345678', 'userName': 'root'}}}
+I 2022-12-16 23:33:12,319| INFO     | [preposition_fixture.py:preposition_fixture:connect_db:31] - *********************开始关闭数据库连接*********************
+D 2022-12-16 23:33:12,319| DEBUG    | [mysql.py:mysql:close_db:165] - ==============================关闭数据库成功===============================
+I 2022-12-16 23:34:05,023| INFO     | [get_data.py:get_data:read_special_list_excel:137] - 成功获取登录login所有用例，共12条用例
+I 2022-12-16 23:34:05,023| INFO     | [get_data.py:get_data:read_special_list_excel:138] - [['测试成功登录', '/apitest/login/', 'post', 'data', "{'username':'test01','password':'123456'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1000, 'Usercheck ok', '登录验证成功'], ['测试用户名为空', '/apitest/login/', 'post', 'data', "{'username':'','password':'123456'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1001, 'Username is null', '用户名不能为空'], ['测试密码为空', '/apitest/login/', 'post', 'data', "{'username':'test02','password':''}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1002, 'Password is null', '密码不能为空'], ['测试用户名和密码均为空', '/apitest/login/', 'post', 'data', "{'username':'','password':''}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1001, 'Username is null', '用户名不能为空'], ['测试用户名错误', '/apitest/login/', 'post', 'data', "{'username':'test03','password':'123456'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1003, 'Username error', '用户名错误'], ['测试密码错误', '/apitest/login/', 'post', 'data', "{'username':'test03','password':'123'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1003, 'Password error', '密码错误'], ['测试用户名和密码均错误', '/apitest/login/', 'post', 'data', "{'username':'test05','password':'123'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1003, 'Username error', '用户名错误'], ['测试用户名为中文', '/apitest/login/', 'post', 'data', "{'username':'你好','password':'123456'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1003, 'Username error', '用户名错误'], ['测试用户名为数字', '/apitest/login/', 'post', 'data', "{'username':'123456','password':'123456'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1003, 'Username error', '用户名错误'], ['测试密码为无效最大边界值', '/apitest/login/', 'post', 'data', "{'username':'test05','password':'12345678945647898468464'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1003, 'Username error', '用户名错误'], ['测试用户名为特殊字符', '/apitest/login/', 'post', 'data', "{'username':'*%$','password':'123456'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1003, 'Username error', '用户名错误'], ['测试密码长度超过限制', '/apitest/login/', 'post', 'data', "{'username':'test15','password':'123456784948494848484486486486'}", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1004, 'Password error', '用户名错误']]
+D 2022-12-16 23:34:05,029| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.address`.
+D 2022-12-16 23:34:05,034| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.address` has been localized to `en_US`.
+D 2022-12-16 23:34:05,038| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.automotive`.
+D 2022-12-16 23:34:05,041| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.automotive` has been localized to `en_US`.
+D 2022-12-16 23:34:05,042| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.bank`.
+D 2022-12-16 23:34:05,044| DEBUG    | [factory.py:factory:_find_provider_class:105] - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+D 2022-12-16 23:34:05,045| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.barcode`.
+D 2022-12-16 23:34:05,045| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.barcode` has been localized to `en_US`.
+D 2022-12-16 23:34:05,048| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.color`.
+D 2022-12-16 23:34:05,049| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.color` has been localized to `en_US`.
+D 2022-12-16 23:34:05,050| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.company`.
+D 2022-12-16 23:34:05,052| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.company` has been localized to `en_US`.
+D 2022-12-16 23:34:05,053| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.credit_card`.
+D 2022-12-16 23:34:05,054| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.credit_card` has been localized to `en_US`.
+D 2022-12-16 23:34:05,055| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.currency`.
+D 2022-12-16 23:34:05,056| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.currency` has been localized to `en_US`.
+D 2022-12-16 23:34:05,058| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.date_time`.
+D 2022-12-16 23:34:05,060| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.date_time` has been localized to `en_US`.
+D 2022-12-16 23:34:05,061| DEBUG    | [factory.py:factory:_find_provider_class:125] - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+D 2022-12-16 23:34:05,062| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.geo`.
+D 2022-12-16 23:34:05,063| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.geo` has been localized to `en_US`.
+D 2022-12-16 23:34:05,064| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.internet`.
+D 2022-12-16 23:34:05,067| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.internet` has been localized to `en_US`.
+D 2022-12-16 23:34:05,068| DEBUG    | [factory.py:factory:_find_provider_class:125] - Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+D 2022-12-16 23:34:05,068| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.job`.
+D 2022-12-16 23:34:05,070| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.job` has been localized to `en_US`.
+D 2022-12-16 23:34:05,071| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.lorem`.
+D 2022-12-16 23:34:05,072| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.lorem` has been localized to `en_US`.
+D 2022-12-16 23:34:05,074| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.misc`.
+D 2022-12-16 23:34:05,075| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.misc` has been localized to `en_US`.
+D 2022-12-16 23:34:05,075| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.person`.
+D 2022-12-16 23:34:05,079| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.person` has been localized to `en_US`.
+D 2022-12-16 23:34:05,085| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.phone_number`.
+D 2022-12-16 23:34:05,091| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.phone_number` has been localized to `en_US`.
+D 2022-12-16 23:34:05,093| DEBUG    | [factory.py:factory:_find_provider_class:125] - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+D 2022-12-16 23:34:05,094| DEBUG    | [factory.py:factory:_find_provider_class:125] - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+D 2022-12-16 23:34:05,094| DEBUG    | [factory.py:factory:_find_provider_class:95] - Looking for locale `en_US` in provider `faker.providers.ssn`.
+D 2022-12-16 23:34:05,098| DEBUG    | [factory.py:factory:_find_provider_class:114] - Provider `faker.providers.ssn` has been localized to `en_US`.
+D 2022-12-16 23:34:05,100| DEBUG    | [factory.py:factory:_find_provider_class:125] - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+D 2022-12-16 23:34:05,101| DEBUG    | [conf.py:conf:conf_get_db:30] - 读数据库服务器配置文件/Users/yangjingkang/PycharmProjects/YJK_api-master/confs/db.conf成功，数据库信息是{'host': '172.16.9.128', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}
+I 2022-12-16 23:34:05,106| INFO     | [mysql.py:mysql:connect:28] - ===============>成功连接数据库,参数为：{'host': '172.16.9.128', 'db': 'wa_test', 'user': 'root', 'passwd': '123456'}<===================
+I 2022-12-16 23:34:05,106| INFO     | [preposition_fixture.py:preposition_fixture:connect_db:29] - *********************开始数据库连接*********************
+D 2022-12-16 23:34:05,114| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 124.223.214.171:8080
+D 2022-12-16 23:34:05,229| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://124.223.214.171:8080 "POST /integration/login HTTP/1.1" 200 None
+I 2022-12-16 23:34:05,230| INFO     | [requeststart.py:requeststart:get_session_cookie:37] - 发起请求的参数为：{'url': 'http://124.223.214.171:8080/integration/login', 'method': 'post', 'json': {'data': {'password': '12345678', 'userName': 'root'}}}
+I 2022-12-16 23:34:05,250| INFO     | [get_data.py:get_data:read_all_excel:37] - 成功获取所有用例，共1条用例
+I 2022-12-16 23:34:05,251| INFO     | [get_data.py:get_data:read_all_excel:38] - [['/integration/ui/frmEditDivision/app', 'get']]
+D 2022-12-16 23:34:05,254| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 124.223.214.171:8080
+D 2022-12-16 23:34:05,592| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://124.223.214.171:8080 "GET /integration/ui/frmEditDivision/app HTTP/1.1" 200 None
+D 2022-12-16 23:34:05,593| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://124.223.214.171:8080/integration/ui/frmEditDivision/app', 'method': 'get', 'headers': {'cookie': 'JSESSIONID=b45b685d-dbe7-4cbd-ac46-a864cc3afa34'}}
+D 2022-12-16 23:34:05,604| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>DELETE FROM wa_test.token WHERE token_id = 1<=====成功
+D 2022-12-16 23:34:05,607| DEBUG    | [mysql.py:mysql:insert_one:44] - 执行SQL语句=====>INSERT INTO wa_test.token VALUES (1,'token','6109c7c749724f9f85cd7a4ad82544c4')<=====成功
+I 2022-12-16 23:34:05,608| INFO     | [preposition_fixture.py:preposition_fixture:get_usernm_passwd:44] - ==========开始获取获取用户信息==========
+I 2022-12-16 23:34:05,611| INFO     | [preposition_fixture.py:preposition_fixture:get_usernm_passwd:47] - ==========成功获取用户信息：admin,e10adc3949ba59abbe56e057f20f883e ==========
+D 2022-12-16 23:34:05,614| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>DELETE FROM info WHERE id=4<=====成功
+D 2022-12-16 23:34:05,616| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>DELETE FROM users WHERE id=4<=====成功
+D 2022-12-16 23:34:05,618| DEBUG    | [mysql.py:mysql:insert_one:44] - 执行SQL语句=====>INSERT INTO users(id, username, password) VALUES(4, 'test01', md5('123456'))<=====成功
+D 2022-12-16 23:34:05,619| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>DELETE FROM info WHERE id=5<=====成功
+D 2022-12-16 23:34:05,621| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>DELETE FROM users WHERE id=5<=====成功
+D 2022-12-16 23:34:05,623| DEBUG    | [mysql.py:mysql:insert_one:44] - 执行SQL语句=====>INSERT INTO users(id, username, password) VALUES(5, 'test02', md5('123456'))<=====成功
+D 2022-12-16 23:34:05,624| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>INSERT INTO info(id, name) VALUES(5, '登录密码为空用户')<=====成功
+D 2022-12-16 23:34:05,625| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>DELETE FROM info WHERE name='登录用户名错误用户'<=====成功
+D 2022-12-16 23:34:05,626| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>DELETE FROM users WHERE username='test03'<=====成功
+D 2022-12-16 23:34:05,628| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>DELETE FROM info WHERE id=6<=====成功
+D 2022-12-16 23:34:05,629| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>DELETE FROM users WHERE id=6<=====成功
+D 2022-12-16 23:34:05,630| DEBUG    | [mysql.py:mysql:insert_one:44] - 执行SQL语句=====>INSERT INTO users(id, username, password) VALUES(6, 'test04', md5('123456'))<=====成功
+D 2022-12-16 23:34:05,632| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>INSERT INTO info(id, name) VALUES(6, '登录密码错误用户')<=====成功
+D 2022-12-16 23:34:05,633| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>DELETE FROM info WHERE name='登录用户名与密码均错误用户'<=====成功
+D 2022-12-16 23:34:05,634| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>DELETE FROM users WHERE username='test05'<=====成功
+D 2022-12-16 23:34:05,635| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>DELETE FROM info WHERE id=8<=====成功
+D 2022-12-16 23:34:05,637| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>DELETE FROM users WHERE id=8<=====成功
+D 2022-12-16 23:34:05,638| DEBUG    | [mysql.py:mysql:insert_one:44] - 执行SQL语句=====>INSERT INTO users(id, username, password) VALUES(8, 'test15', md5('123456'))<=====成功
+D 2022-12-16 23:34:05,639| DEBUG    | [mysql.py:mysql:delete_one:94] - 执行SQL语句=====>INSERT INTO info(id, name) VALUES(8, '密码超过限制长度')<=====成功
+D 2022-12-16 23:34:05,642| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 172.16.9.128:80
+D 2022-12-16 23:34:05,655| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://172.16.9.128:80 "POST /apitest/login/ HTTP/1.1" 200 70
+D 2022-12-16 23:34:05,656| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://172.16.9.128:80/apitest/login/', 'method': 'post', 'data': {'username': 'test01', 'password': '123456'}}
+D 2022-12-16 23:34:05,656| DEBUG    | [asserts.py:asserts:assert_code:30] - Response_Code实际结果为：1000
+D 2022-12-16 23:34:05,656| DEBUG    | [asserts.py:asserts:assert_code:31] - Response_Code预期结果为：1000
+I 2022-12-16 23:34:05,657| INFO     | [asserts.py:asserts:assert_code:33] - 断言Code用例通过！
+D 2022-12-16 23:34:05,657| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：Usercheck ok
+D 2022-12-16 23:34:05,657| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：Usercheck ok
+I 2022-12-16 23:34:05,657| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,657| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：登录验证成功
+D 2022-12-16 23:34:05,657| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：登录验证成功
+I 2022-12-16 23:34:05,658| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,662| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 172.16.9.128:80
+D 2022-12-16 23:34:05,665| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://172.16.9.128:80 "POST /apitest/login/ HTTP/1.1" 200 77
+D 2022-12-16 23:34:05,666| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://172.16.9.128:80/apitest/login/', 'method': 'post', 'data': {'username': '', 'password': '123456'}}
+D 2022-12-16 23:34:05,666| DEBUG    | [asserts.py:asserts:assert_code:30] - Response_Code实际结果为：1001
+D 2022-12-16 23:34:05,666| DEBUG    | [asserts.py:asserts:assert_code:31] - Response_Code预期结果为：1001
+I 2022-12-16 23:34:05,666| INFO     | [asserts.py:asserts:assert_code:33] - 断言Code用例通过！
+D 2022-12-16 23:34:05,667| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：Username is null
+D 2022-12-16 23:34:05,667| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：Username is null
+I 2022-12-16 23:34:05,667| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,668| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：用户名不能为空
+D 2022-12-16 23:34:05,668| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：用户名不能为空
+I 2022-12-16 23:34:05,669| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,674| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 172.16.9.128:80
+D 2022-12-16 23:34:05,679| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://172.16.9.128:80 "POST /apitest/login/ HTTP/1.1" 200 74
+D 2022-12-16 23:34:05,679| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://172.16.9.128:80/apitest/login/', 'method': 'post', 'data': {'username': 'test02', 'password': ''}}
+D 2022-12-16 23:34:05,680| DEBUG    | [asserts.py:asserts:assert_code:30] - Response_Code实际结果为：1002
+D 2022-12-16 23:34:05,680| DEBUG    | [asserts.py:asserts:assert_code:31] - Response_Code预期结果为：1002
+I 2022-12-16 23:34:05,680| INFO     | [asserts.py:asserts:assert_code:33] - 断言Code用例通过！
+D 2022-12-16 23:34:05,681| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：Password is null
+D 2022-12-16 23:34:05,681| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：Password is null
+I 2022-12-16 23:34:05,681| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,681| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：密码不能为空
+D 2022-12-16 23:34:05,681| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：密码不能为空
+I 2022-12-16 23:34:05,681| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,686| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 172.16.9.128:80
+D 2022-12-16 23:34:05,691| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://172.16.9.128:80 "POST /apitest/login/ HTTP/1.1" 200 77
+D 2022-12-16 23:34:05,692| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://172.16.9.128:80/apitest/login/', 'method': 'post', 'data': {'username': '', 'password': ''}}
+D 2022-12-16 23:34:05,692| DEBUG    | [asserts.py:asserts:assert_code:30] - Response_Code实际结果为：1001
+D 2022-12-16 23:34:05,693| DEBUG    | [asserts.py:asserts:assert_code:31] - Response_Code预期结果为：1001
+I 2022-12-16 23:34:05,693| INFO     | [asserts.py:asserts:assert_code:33] - 断言Code用例通过！
+D 2022-12-16 23:34:05,693| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：Username is null
+D 2022-12-16 23:34:05,694| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：Username is null
+I 2022-12-16 23:34:05,694| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,694| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：用户名不能为空
+D 2022-12-16 23:34:05,695| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：用户名不能为空
+I 2022-12-16 23:34:05,695| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,700| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 172.16.9.128:80
+D 2022-12-16 23:34:05,707| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://172.16.9.128:80 "POST /apitest/login/ HTTP/1.1" 200 69
+D 2022-12-16 23:34:05,708| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://172.16.9.128:80/apitest/login/', 'method': 'post', 'data': {'username': 'test03', 'password': '123456'}}
+D 2022-12-16 23:34:05,708| DEBUG    | [asserts.py:asserts:assert_code:30] - Response_Code实际结果为：1003
+D 2022-12-16 23:34:05,709| DEBUG    | [asserts.py:asserts:assert_code:31] - Response_Code预期结果为：1003
+I 2022-12-16 23:34:05,709| INFO     | [asserts.py:asserts:assert_code:33] - 断言Code用例通过！
+D 2022-12-16 23:34:05,709| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：Username error
+D 2022-12-16 23:34:05,710| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：Username error
+I 2022-12-16 23:34:05,710| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,710| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：用户名错误
+D 2022-12-16 23:34:05,710| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：用户名错误
+I 2022-12-16 23:34:05,710| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,717| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 172.16.9.128:80
+D 2022-12-16 23:34:05,721| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://172.16.9.128:80 "POST /apitest/login/ HTTP/1.1" 200 69
+D 2022-12-16 23:34:05,722| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://172.16.9.128:80/apitest/login/', 'method': 'post', 'data': {'username': 'test03', 'password': '123'}}
+D 2022-12-16 23:34:05,722| DEBUG    | [asserts.py:asserts:assert_code:30] - Response_Code实际结果为：1003
+D 2022-12-16 23:34:05,723| DEBUG    | [asserts.py:asserts:assert_code:31] - Response_Code预期结果为：1003
+I 2022-12-16 23:34:05,723| INFO     | [asserts.py:asserts:assert_code:33] - 断言Code用例通过！
+D 2022-12-16 23:34:05,723| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：Username error
+D 2022-12-16 23:34:05,723| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：Password error
+E 2022-12-16 23:34:05,724| ERROR    | [asserts.py:asserts:assert_message:47] - 断言失败，Response_Message实际结果为：Username error，Response预期结果为：Password error
+E 2022-12-16 23:34:05,724| ERROR    | [asserts.py:asserts:assert_message:48] - 断言用例不通过！
+D 2022-12-16 23:34:05,839| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 172.16.9.128:80
+D 2022-12-16 23:34:05,846| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://172.16.9.128:80 "POST /apitest/login/ HTTP/1.1" 200 69
+D 2022-12-16 23:34:05,847| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://172.16.9.128:80/apitest/login/', 'method': 'post', 'data': {'username': 'test05', 'password': '123'}}
+D 2022-12-16 23:34:05,847| DEBUG    | [asserts.py:asserts:assert_code:30] - Response_Code实际结果为：1003
+D 2022-12-16 23:34:05,848| DEBUG    | [asserts.py:asserts:assert_code:31] - Response_Code预期结果为：1003
+I 2022-12-16 23:34:05,848| INFO     | [asserts.py:asserts:assert_code:33] - 断言Code用例通过！
+D 2022-12-16 23:34:05,848| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：Username error
+D 2022-12-16 23:34:05,849| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：Username error
+I 2022-12-16 23:34:05,849| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,849| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：用户名错误
+D 2022-12-16 23:34:05,850| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：用户名错误
+I 2022-12-16 23:34:05,850| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,856| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 172.16.9.128:80
+D 2022-12-16 23:34:05,862| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://172.16.9.128:80 "POST /apitest/login/ HTTP/1.1" 200 69
+D 2022-12-16 23:34:05,863| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://172.16.9.128:80/apitest/login/', 'method': 'post', 'data': {'username': '你好', 'password': '123456'}}
+D 2022-12-16 23:34:05,864| DEBUG    | [asserts.py:asserts:assert_code:30] - Response_Code实际结果为：1003
+D 2022-12-16 23:34:05,864| DEBUG    | [asserts.py:asserts:assert_code:31] - Response_Code预期结果为：1003
+I 2022-12-16 23:34:05,864| INFO     | [asserts.py:asserts:assert_code:33] - 断言Code用例通过！
+D 2022-12-16 23:34:05,864| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：Username error
+D 2022-12-16 23:34:05,864| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：Username error
+I 2022-12-16 23:34:05,865| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,865| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：用户名错误
+D 2022-12-16 23:34:05,865| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：用户名错误
+I 2022-12-16 23:34:05,865| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,871| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 172.16.9.128:80
+D 2022-12-16 23:34:05,876| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://172.16.9.128:80 "POST /apitest/login/ HTTP/1.1" 200 69
+D 2022-12-16 23:34:05,877| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://172.16.9.128:80/apitest/login/', 'method': 'post', 'data': {'username': '123456', 'password': '123456'}}
+D 2022-12-16 23:34:05,877| DEBUG    | [asserts.py:asserts:assert_code:30] - Response_Code实际结果为：1003
+D 2022-12-16 23:34:05,877| DEBUG    | [asserts.py:asserts:assert_code:31] - Response_Code预期结果为：1003
+I 2022-12-16 23:34:05,878| INFO     | [asserts.py:asserts:assert_code:33] - 断言Code用例通过！
+D 2022-12-16 23:34:05,878| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：Username error
+D 2022-12-16 23:34:05,878| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：Username error
+I 2022-12-16 23:34:05,878| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,879| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：用户名错误
+D 2022-12-16 23:34:05,879| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：用户名错误
+I 2022-12-16 23:34:05,879| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,884| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 172.16.9.128:80
+D 2022-12-16 23:34:05,888| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://172.16.9.128:80 "POST /apitest/login/ HTTP/1.1" 200 69
+D 2022-12-16 23:34:05,889| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://172.16.9.128:80/apitest/login/', 'method': 'post', 'data': {'username': 'test05', 'password': '12345678945647898468464'}}
+D 2022-12-16 23:34:05,889| DEBUG    | [asserts.py:asserts:assert_code:30] - Response_Code实际结果为：1003
+D 2022-12-16 23:34:05,889| DEBUG    | [asserts.py:asserts:assert_code:31] - Response_Code预期结果为：1003
+I 2022-12-16 23:34:05,889| INFO     | [asserts.py:asserts:assert_code:33] - 断言Code用例通过！
+D 2022-12-16 23:34:05,890| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：Username error
+D 2022-12-16 23:34:05,890| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：Username error
+I 2022-12-16 23:34:05,890| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,890| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：用户名错误
+D 2022-12-16 23:34:05,891| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：用户名错误
+I 2022-12-16 23:34:05,891| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,897| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 172.16.9.128:80
+D 2022-12-16 23:34:05,901| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://172.16.9.128:80 "POST /apitest/login/ HTTP/1.1" 200 69
+D 2022-12-16 23:34:05,902| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://172.16.9.128:80/apitest/login/', 'method': 'post', 'data': {'username': '*%$', 'password': '123456'}}
+D 2022-12-16 23:34:05,903| DEBUG    | [asserts.py:asserts:assert_code:30] - Response_Code实际结果为：1003
+D 2022-12-16 23:34:05,903| DEBUG    | [asserts.py:asserts:assert_code:31] - Response_Code预期结果为：1003
+I 2022-12-16 23:34:05,903| INFO     | [asserts.py:asserts:assert_code:33] - 断言Code用例通过！
+D 2022-12-16 23:34:05,903| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：Username error
+D 2022-12-16 23:34:05,903| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：Username error
+I 2022-12-16 23:34:05,904| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,904| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：用户名错误
+D 2022-12-16 23:34:05,904| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：用户名错误
+I 2022-12-16 23:34:05,904| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,909| DEBUG    | [connectionpool.py:connectionpool:_new_conn:227] - Starting new HTTP connection (1): 172.16.9.128:80
+D 2022-12-16 23:34:05,913| DEBUG    | [connectionpool.py:connectionpool:_make_request:452] - http://172.16.9.128:80 "POST /apitest/login/ HTTP/1.1" 200 78
+D 2022-12-16 23:34:05,914| DEBUG    | [requeststart.py:requeststart:send_request:22] - 发起请求的参数为：{'url': 'http://172.16.9.128:80/apitest/login/', 'method': 'post', 'data': {'username': 'test15', 'password': '123456784948494848484486486486'}}
+D 2022-12-16 23:34:05,914| DEBUG    | [asserts.py:asserts:assert_code:30] - Response_Code实际结果为：1004
+D 2022-12-16 23:34:05,914| DEBUG    | [asserts.py:asserts:assert_code:31] - Response_Code预期结果为：1004
+I 2022-12-16 23:34:05,915| INFO     | [asserts.py:asserts:assert_code:33] - 断言Code用例通过！
+D 2022-12-16 23:34:05,915| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：Password error
+D 2022-12-16 23:34:05,915| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：Password error
+I 2022-12-16 23:34:05,915| INFO     | [asserts.py:asserts:assert_message:45] - 断言Message用例通过！
+D 2022-12-16 23:34:05,916| DEBUG    | [asserts.py:asserts:assert_message:42] - Response_Message实际结果为：用户名或密码错误
+D 2022-12-16 23:34:05,916| DEBUG    | [asserts.py:asserts:assert_message:43] - Response_Message预期结果为：用户名错误
+E 2022-12-16 23:34:05,916| ERROR    | [asserts.py:asserts:assert_message:47] - 断言失败，Response_Message实际结果为：用户名或密码错误，Response预期结果为：用户名错误
+E 2022-12-16 23:34:05,916| ERROR    | [asserts.py:asserts:assert_message:48] - 断言用例不通过！
+I 2022-12-16 23:34:05,923| INFO     | [preposition_fixture.py:preposition_fixture:connect_db:31] - *********************开始关闭数据库连接*********************
+D 2022-12-16 23:34:05,923| DEBUG    | [mysql.py:mysql:close_db:165] - ==============================关闭数据库成功===============================
