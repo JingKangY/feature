@@ -18,7 +18,7 @@ import os
 import sys
 import time
 import pytest
-
+# 测试代码上传
 # sys.path.append(os.path.dirname(__file__))
 if __name__ == '__main__':
     pytest.main(['-sv', '--alluredir', './temp_allurefile', '--clean-alluredir'])

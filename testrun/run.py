@@ -15,7 +15,6 @@
 import os
 import time
 import pytest
-import text_unidecode
 
 from emails.email_manage import EmailManage
 
