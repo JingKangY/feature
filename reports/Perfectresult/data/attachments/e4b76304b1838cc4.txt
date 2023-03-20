@@ -1,9 +1,0 @@
-DEBUG    urllib3.connectionpool:connectionpool.py:227 Starting new HTTP connection (1): 172.16.9.128:80
-DEBUG    urllib3.connectionpool:connectionpool.py:452 http://172.16.9.128:80 "POST /apitest/signup/ HTTP/1.1" 200 59
-DEBUG    root:requeststart.py:22 发起请求的参数为：{'url': 'http://172.16.9.128:80/apitest/signup/', 'method': 'post', 'json': {'username': '阳靖康', 'password': '123456', 'confirm': '123456', 'name': '中文注册用户'}}
-DEBUG    root:asserts.py:18 Response实际结果为：{'Status': 1000, 'Result': 'Success', 'Message': '注册成功'}
-DEBUG    root:asserts.py:19 Response预期结果为：{'Status': 1000, 'Result': 'Success', 'Message': '注册成功'}
-INFO     root:asserts.py:21 断言用例通过！
-DEBUG    root:mysql.py:152 验库的预期结果：(1, 1)
-DEBUG    root:mysql.py:153 验库的实际结果：(1, 1)
-INFO     root:mysql.py:155 验证数据库用例通过！

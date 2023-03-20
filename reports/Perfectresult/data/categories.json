@@ -6,40 +6,16 @@
       "name" : "AssertionError",
       "children" : [ {
         "name" : "测试一下",
-        "uid" : "eaab7b1252382bf7",
+        "uid" : "9b2f62e93744aa0c",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1673005304115,
-          "stop" : 1673005304350,
-          "duration" : 235
+          "start" : 1679279256256,
+          "stop" : 1679279257061,
+          "duration" : 805
         },
         "flaky" : false,
         "parameters" : [ "['测试一下', 'https://p10496-hk-bbs.ejoy.com/api/bbs/S3G二周年两行情书/index?count=100', 'get', '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', '3e4547b4bb12e9047950252d64b63472']" ]
-      }, {
-        "name" : "测试密码错误",
-        "uid" : "650f4346aefeb198",
-        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
-        "status" : "failed",
-        "time" : {
-          "start" : 1673005304593,
-          "stop" : 1673005304606,
-          "duration" : 13
-        },
-        "flaky" : false,
-        "parameters" : [ "['测试密码错误', '/apitest/login/', 'post', 'data', \"{'username':'test03','password':'123'}\", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1003, 'Password error', '密码错误']" ]
-      }, {
-        "name" : "测试密码长度超过限制",
-        "uid" : "8ba1e7a9b188a59d",
-        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
-        "status" : "failed",
-        "time" : {
-          "start" : 1673005304722,
-          "stop" : 1673005304734,
-          "duration" : 12
-        },
-        "flaky" : false,
-        "parameters" : [ "['测试密码长度超过限制', '/apitest/login/', 'post', 'data', \"{'username':'test15','password':'123456784948494848484486486486'}\", '1、正确输入接口地址 2、正确输入请求参数 3、查看响应body是否正确', 1004, 'Password error', '用户名错误']" ]
       } ],
       "uid" : "a0017ad855102fea08b8682d27fec4ca"
     } ],

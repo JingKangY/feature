@@ -17,6 +17,29 @@ from loging.log import *
 
 class GetDataExcel:
 
+    def liststr_to_listint(self, excelpath, sheetname, args: list):
+        '''
+        @param excelpath: 文件路径 -->  Excel
+        @param sheetname: 文件sheet名称
+        @param args: 传入字典嵌套字符串
+        @return: 返回字典嵌套整型，方便读取数据
+        '''
+        self.wb = openpyxl.load_workbook(excelpath)  # 加载工作簿
+        self.sheet = self.wb[sheetname]  # 获得sheet对象
+        first_list = []
+        for i in self.sheet[1]:
+            first_list.append(i.value)
+        data = first_list
+        datas = args
+        dict = {}
+        list = []
+        for key, value in enumerate(data):
+            dict["{}".format(value)] = eval("{}".format(key + 1))
+        for d in datas:
+            number = dict.get(d)
+            list.append(number)
+        return list
+
     def read_all_excel(self, excelpath, sheetname):
         """
         获取所有用例
@@ -115,7 +138,7 @@ class GetDataExcel:
         log.info(all_list)
         return all_list
 
-    def read_special_list_excel(self, excelpath, sheetname, datas: list, testname: str):
+    def read_special_list_excel(self, excelpath, sheetname, args: list, testname: str):
         '''
         指定列数据读取（例如：1、3、5、6）
         :param excelpath:  用例位置
@@ -128,6 +151,7 @@ class GetDataExcel:
         self.sheet = self.wb[sheetname]  # 获得sheet对象
         cases_num = self.sheet.max_row
         list_cases = []
+        datas = read.liststr_to_listint(excelpath, sheetname, args)
         for row in range(2, cases_num + 1):
             list_case = []
             for data in datas:
@@ -138,7 +162,7 @@ class GetDataExcel:
         log.info(list_cases)
         return list_cases
 
-    def read_special_rows_list_excel(self, excelpath, sheetname, row1, row2, datas: list):
+    def read_special_rows_list_excel(self, excelpath, sheetname, row1, row2, args: list):
         '''
         指定列指定行读取数据
         :param excelpath: 用例位置
@@ -151,6 +175,7 @@ class GetDataExcel:
         self.wb = openpyxl.load_workbook(excelpath)  # 加载工作簿
         self.sheet = self.wb[sheetname]  # 获得sheet对象
         all_list = []
+        datas = read.liststr_to_listint(excelpath, sheetname, args)
         for row in range(row1 + 1, row2 + 2):
             list_case = []
             for data in datas:
@@ -185,21 +210,22 @@ if __name__ == '__main__':
     read.read_all_excel(GetFilePath().get_all_file_path(r'data/双创wa项目接口文档.xlsx'), 'wa登录')  # 第一个参数是文档位置，第二个是sheet页的名称
     # read.read_screen_excel(GetFilePath().get_all_file_path(r'data/api_login1.xlsx'), 'login', [2, 3, 4, 10, 13])  # 指定部分行数不读取
     # read.read_special_list_excel(GetFilePath().get_all_file_path(r'data/api_login1.xlsx'), 'login', [1, 2, 3, 4, 5, 8, 13], '登录login')
-    #read.read_special_list_excel(GetFilePath().get_all_file_path(r'data/双创wa项目接口文档.xlsx'), '登录模块', [1, 2, 3, 4, 5, 10, 15, 16, 17, 18], '登录接口')
+    # read.read_special_list_excel(GetFilePath().get_all_file_path(r'data/双创wa项目接口文档.xlsx'), '登录模块', [1, 2, 3, 4, 5, 10, 15, 16, 17, 18], '登录接口')
     # read.read_one_row_excel(GetFilePath().get_all_file_path(r'data/双创wa项目接口文档.xlsx'), '登录模块', 1)
     # # read.read_some_rows_excel(GetFilePath().get_all_file_path(r'data/api_login1.xlsx'), 'login', 0, 7)
     # read.read_cell_excel(GetFilePath().get_all_file_path(r'data/双创wa项目接口文档.xlsx'), '登录模块', 1, 1)
-    #read.read_special_rows_list_excel(GetFilePath().get_all_file_path(r'data/双创项目接口文档.xlsx'), '登录模块', 1, 1, [1, 2, 3])
+    # read.read_special_rows_list_excel(GetFilePath().get_all_file_path(r'data/双创项目接口文档.xlsx'), '登录模块', 1, 1, [1, 2, 3])
     # # read.write_excel(GetFilePath().get_all_file_path(r'data/api_login1.xlsx'), 'login', 'A3', 'login_02')
     # read.read_special_rows_list_excel(GetFilePath().get_all_file_path(r'data/api_login1.xlsx'),
     #   read_cell_excel                                'login', 5, 7, [10, 14])
-    #read.read_special_rows_list_excel(GetFilePath().get_all_file_path(r'data/双创项目接口文档.xlsx'),
+    # read.read_special_rows_list_excel(GetFilePath().get_all_file_path(r'data/双创项目接口文档.xlsx'),
     #                                  '登录模块', 1, 4, [4, 7, 8, 9, 11, 13, 14, 15, 18])
     # token = read.read_all_excel(GetFilePath().get_all_file_path(r'data/双创wa项目接口文档.xlsx'),'获取token')
     # url = token[0][0]
     # method = token[0][1]
     # print(url)
-    #系统不同 这里用 /
+    # 系统不同 这里用 /
     read.read_special_list_excel(GetFilePath().get_all_file_path(r'data/双创wa项目接口文档.xlsx'),
-                                 'wa登录', [2, 5, 6, 7, 9, 11, 12, 13, 14],
+                                 'wa登录', ["用例标题(描述)", "接口地址", "请求方法", "请求类型", "参数", "步骤", "预期结果body（报文）：code",
+                                          "预期结果body（报文）：result", "预期结果body（报文）message"],
                                  '登录login')

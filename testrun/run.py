@@ -19,8 +19,8 @@ import pytest
 from emails.email_manage import EmailManage
 
 if __name__ == '__main__':
-    #pytest.main(['-sv', '--alluredir', '../temp_allurefile', '--clean-alluredir','../testcase/erxing_Love_Letter/test_get_bullet_screen_content.py'])
-    pytest.main(['-v', '--alluredir', '../temp_allurefile', '--clean-alluredir', '../testcase'])
+    pytest.main(['-sv', '--alluredir', '../temp_allurefile', '--clean-alluredir','../testcase/erxing_Love_Letter/test_get_bullet_screen_content.py'])
+    #pytest.main(['-v', '--alluredir', '../temp_allurefile', '--clean-alluredir', '../testcase'])
     '''
     pytest.main()：main中传入不同的指令用以执行指定测试用例a
     -s: 显示程序中的print/logging输出

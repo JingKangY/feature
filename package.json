@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "loging": "^1.0.1",
+    "requests": "^0.3.0"
+  }
+}
